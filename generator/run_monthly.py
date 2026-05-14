@@ -109,30 +109,48 @@ def _claude() -> anthropic.Anthropic:
     return anthropic.Anthropic()
 
 
-def _ask_json(prompt: str, max_tokens: int = 8192) -> dict | list:
-    """Send a prompt to Claude expecting strict JSON back. Retries once on parse failure."""
+def _extract_json_blob(text: str) -> str:
+    """Strip markdown fences and trim to the outermost {...} or [...] blob."""
+    text = text.strip()
+    if text.startswith("```"):
+        text = text.split("```", 2)[1]
+        if text.startswith("json"):
+            text = text[4:]
+        text = text.strip("` \n")
+    # If Claude wrapped JSON in prose, find the first { or [ and matching close
+    first_obj = text.find("{")
+    first_arr = text.find("[")
+    candidates = [c for c in (first_obj, first_arr) if c >= 0]
+    if candidates:
+        start = min(candidates)
+        # Find the matching closing bracket
+        opener = text[start]
+        closer = "}" if opener == "{" else "]"
+        last = text.rfind(closer)
+        if last > start:
+            return text[start:last + 1]
+    return text
+
+
+def _ask_json(prompt: str, max_tokens: int = 8192, max_attempts: int = 5) -> dict | list:
+    """Send a prompt to Claude expecting strict JSON back. Retries on parse failure."""
     client = _claude()
     last_err = None
-    for attempt in (1, 2):
+    for attempt in range(1, max_attempts + 1):
         msg = client.messages.create(
             model=CLAUDE_MODEL,
             max_tokens=max_tokens,
             messages=[{"role": "user", "content": prompt}],
         )
-        text = msg.content[0].text.strip()
-        # Strip accidental fences
-        if text.startswith("```"):
-            text = text.split("```", 2)[1]
-            if text.startswith("json"):
-                text = text[4:]
-            text = text.strip("` \n")
+        text = msg.content[0].text
+        blob = _extract_json_blob(text)
         try:
-            return json.loads(text)
+            return json.loads(blob)
         except json.JSONDecodeError as e:
             last_err = e
-            log.warning("JSON parse failed on attempt %d: %s", attempt, e)
-            prompt += "\n\nSVARBU: tavo ankstesnis atsakymas nebuvo teisingas JSON. Atsakyk TIK teisingu JSON, be markdown."
-    raise RuntimeError(f"Claude failed to return valid JSON after 2 attempts: {last_err}")
+            log.warning("JSON parse failed on attempt %d/%d: %s", attempt, max_attempts, e)
+            prompt += "\n\nSVARBU: tavo ankstesnis atsakymas nebuvo teisingas JSON. Atsakyk TIK teisingu JSON, be markdown, be paaiškinimų, be ```."
+    raise RuntimeError(f"Claude failed to return valid JSON after {max_attempts} attempts: {last_err}")
 
 
 def generate_theme(month_lt: str, season_lt: str, year: int, theme_hint: str) -> Theme:
