@@ -31,7 +31,7 @@
           <span class="map-sidebar__num">{{ "%02d"|format(art.id) }}</span>
           <span class="map-sidebar__copy">
             <span class="map-sidebar__title">{{ art.title_lt }}</span>
-            <span class="map-sidebar__artist">{{ art.artist }}</span>
+            <span class="map-sidebar__artist">{{ art.medium_lt }}</span>
           </span>
           <span class="map-sidebar__thumb">
             <img src="{{ assets_base }}/images/{{ art.image_filename }}" alt="" loading="lazy">
@@ -109,7 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         <div class="plate-popup__num">№ ${String(p.id).padStart(2, '0')}</div>
         <div class="plate-popup__title">${escape(art.title_lt)}</div>
-        <div class="plate-popup__artist">${escape(art.artist)}</div>
         ${p.name_lt ? `<div class="plate-popup__loc">${escape(p.name_lt)}</div>` : ''}
         <a class="plate-popup__btn" href="${art.url.replace('https://miskogalerija.lt','')}">Žiūrėti kūrinį →</a>
       </div>

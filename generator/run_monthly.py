@@ -79,14 +79,14 @@ class Theme:
 @dataclass
 class Artwork:
     id: int
-    artist: str
     title_lt: str
     year: str
     medium_lt: str
     statement_lt: str
     image_prompt: str
+    artist: str = ""  # Deprecated: kept for backward compat with old concepts.json. No author names are generated anymore.
     image_filename: str = ""
-    target_filename: str = ""  # MindAR .mind file
+    target_filename: str = ""  # MindAR .mind file (no longer used)
 
 
 @dataclass
