@@ -21,7 +21,9 @@ permissions:
 jobs:
   generate-and-deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # 25 OpenAI images at Tier-1 (5 RPM) + serial pacing takes 20–25 min.
+    # Bumped from 30 → 60 to leave headroom for slow image-gen calls.
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
 
