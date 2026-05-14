@@ -1,0 +1,277 @@
+{
+  "theme": {
+    "title": "Kur dingo bitės?",
+    "subtitle": "Paroda apie tylą, kuri ateina prieš nebūtį.",
+    "essay": "Gegužė Lietuvos miške turėtų skambėti. Žydinčios blindės, išsiskleidusios gudobelės, pirmosios liepų žiedų kekės — viskas šaukia apdulkintojus. Tačiau pastarąjį dešimtmetį ši polifonija retėja. Laukinių bičių, kamanių, širšių populiacijos Europoje sumažėjo trečdaliu. Kai kurios rūšys išnyko tyliai, net nespėjusios gauti lietuviško vardo. Ši paroda neklausia, kodėl jos dingsta — tai jau žinome. Pesticidai, monokultūros, fragmentuotos buveinės. Verčiau klausiame: kaip atrodo pasaulis, kuriame jų nėra? Dvidešimt keturi kūriniai tiria tuštumą, likusią po biologinės funkcijos. Vizualiai tai — nevaisingi žiedai, sustingęs nektaras, aviliai kaip archeologiniai objektai. Kai kuriuose darbuose bitė dar matoma, bet jau kaip prisiminimas, holografinė iškasena. Kituose jos nebėra visai — tik augalai, laukiantys apsilankymo, kuris neateis. Parodos pavadinimas — klausimas be atsakymo. Jis skirtas ne tik entomologijai, bet ir platesniam praradimo jausmui: kaip atpažįstame dingimą, kai jis vyksta lėčiau nei viena žmogaus karta gali pastebėti? Gegužės miškas dar ūžia. Bet jei įsiklausysite, girdėsite, kad ūžimas kasmet vis siauresnis. Paroda nekaltina ir neguodžia — ji tik fiksuoja akimirką, kol dar yra ką fiksuoti.",
+    "visual_direction": "Hyper-detailed botanical illustration style merged with subtle digital decay — petals rendered with scientific precision but with missing sections, as if data was corrupted. Bees, when present, appear translucent or spectral, never fully solid. Compositions feel like archival plates from a natural history museum of the near future.",
+    "palette_hint": "pollen yellow, bruised violet, dried honey amber, ash white, deep forest shadow"
+  },
+  "artworks": [
+    {
+      "id": 1,
+      "artist": "Vytautas Rimkevičius",
+      "title_lt": "Paskutinė inventorizacija",
+      "year": "2026",
+      "medium_lt": "Skaitmeninė tapyba",
+      "statement_lt": "Dirbu kaip archyvaras pasaulyje, kuris nebenori būti archyvuojamas. Kiekvieną rytą piešiu bites iš atminties – tas, kurias mačiau vaikystėje senelio sode. Jų kontūrai blėsta su kiekvienu bandymu. Šis paveikslas yra ne paveikslas, o gedulo aktas. Aš fiksuoju ne tai, kas yra, bet tai, ko nebesugebame prisiminti. Kai paskutinė bitė dings, dings ir spalva, kuria ją tapiau.",
+      "image_prompt": "Hyper-detailed botanical illustration of a beehive cross-section in archival museum style, scientific precision with corrupted missing sections revealing void beneath. Three spectral translucent bees float near honeycomb cells that dissolve into digital noise. Color palette: dried honey amber dominates, pollen yellow highlights, ash white negative space, deep forest shadow in corners. Composition centered like Victorian natural history plate, subtle scan lines and data artifacts. Melancholic atmosphere of documentation and loss. Square format.",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 2,
+      "artist": "Elena Mockutė-Strand",
+      "title_lt": "Žiedadulkių kartografija",
+      "year": "2026",
+      "medium_lt": "Mišri technika ant archyvinio popieriaus",
+      "statement_lt": "Menininkė Elena Mockutė-Strand renka žiedadulkes iš apleistu sodų ir kuria iš jų žemėlapius – teritorijų, kurios egzistuoja tik bičių atmintyje. Jos kartografijos nerodo kelių ar miestų. Jos rodo maršrutus, kuriais niekas nebeskrenda. Tai yra geografija be gyventojų, atlasas be keliautojų. Kiekvienas taškas žemėlapyje yra žiedas, kurio niekas nebeaplankys.",
+      "image_prompt": "Botanical map illustration showing flight paths of bees rendered as delicate golden lines across pressed flower specimens. Flowers depicted with scientific accuracy but with sections missing as if eroded or digitally corrupted. Ghostly transparent bee silhouettes mark waypoints. Pollen yellow route lines, bruised violet flower centers, dried honey amber aged paper texture, ash white borders with deep forest shadow vignette. Antique cartographic style merged with digital decay. Contemplative, archival mood. Square format composition.",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 3,
+      "artist": "Jonas Kazlauskas",
+      "title_lt": "Tylus avilys",
+      "year": "2026",
+      "medium_lt": "Fotografija su skaitmeniniu apdorojimu",
+      "statement_lt": "Fotografuoju avilius jau dvidešimt metų. Anksčiau jie dainavo. Dabar – tyli. Šioje fotografijoje matote avilį, kuris atrodo sveikas, bet yra tuščias. Tai yra namų portretas be šeimos. Manipuliuoju vaizdu taip, kad matytumėte tai, ko akis nemato – spektrinį bičių buvimo pėdsaką, jų energetinį atspaudą ant medžio. Jie vis dar čia, bet jau ne visai.",
+      "image_prompt": "Documentary-style photograph of weathered wooden beehive in overgrown garden, hyper-detailed texture of aged wood grain. Spectral translucent bees emerge from entrance as ghostly afterimages, barely visible. Digital corruption artifacts eat away at edges of frame. Lighting: soft overcast creating ash white highlights, deep forest shadows beneath hive. Pollen yellow wildflowers in foreground with missing petals, bruised violet shadows. Forensic, melancholic atmosphere of absence. Square format, centered composition.",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 4,
+      "artist": "Mira Volkov",
+      "title_lt": "Nektaro sapnas Nr. 7",
+      "year": "2026",
+      "medium_lt": "Skaitmeninis kolažas",
+      "statement_lt": "Sapnuoju bites kas naktį. Jos kalba man kalbą, kurios nesuprantu, bet jaučiu. Mano kolažuose dedu kartu fragmentus – senas botanikos enciklopedijas, vaikystės nuotraukas, skaitmenines klaidas. Ieškau vietos, kur susitinka atmintis ir užmarštis. Bitė mano darbuose nėra vabzdys. Ji yra simbolis visko, ką prarandame, kol nesuspėjame suprasti, kad turėjome.",
+      "image_prompt": "Surrealist botanical collage featuring giant flower dissection with anatomical precision, petals torn and layered like manuscript pages. Translucent spectral bee caught mid-flight through collage layers. Mixed vintage botanical plate aesthetics with digital glitch corruption. Pollen yellow dominant with bruised violet undertones, dried honey amber in layered paper textures, ash white torn edges, deep forest shadow backgrounds. Dreamlike yet scientific atmosphere. Fragmented composition suggesting memory loss. Square format.",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 5,
+      "artist": "Augustinas Balčiūnas",
+      "title_lt": "Šešių kojų malda",
+      "year": "2026",
+      "medium_lt": "Aliejinė tapyba, skaitmeninis perdirbimas",
+      "statement_lt": "Esu tikintis žmogus, bet mano dievai – smulkūs ir turi sparnus. Tapau bites kaip šventuosius – su aureolėmis iš žiedadulkių, su sparnais iš vitražinio stiklo. Bet šie šventieji miršta. Jų kultas baigiasi. Ši tapyba yra ikona religijai, kuri nebeturės išpažinėjų. Kai paskutinis tikintysis užmirš maldą, bitė taps tik žodžiu žodyne.",
+      "image_prompt": "Religious icon style painting of a bee depicted as sacred figure with pollen yellow halo, wings rendered like Byzantine gold leaf. Botanical flowers surround like devotional border with scientific precision but sections corrupted and missing. Translucent spectral quality to bee body. Rich dried honey amber and bruised violet liturgical colors, ash white divine light emanating from center, deep forest shadow frame. Devotional yet elegiac mood of dying faith. Vertical icon proportions adapted to square format.",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 6,
+      "artist": "Kotryna Vaitkutė",
+      "title_lt": "Anatomija #12: Liežuvėlis",
+      "year": "2026",
+      "medium_lt": "Mokslinė iliustracija, skaitmeninė",
+      "statement_lt": "Dirbu mokslinės iliustracijos srityje. Anksčiau piešiau gyvus organizmus. Dabar piešiu tai, kas išnyksta. Ši anatomijos studija rodo bitės liežuvėlį – stebuklingą instrumentą, sukurtą nektarui rinkti. Piešiu jį su tokiu tikslumu, lyg nuo to priklausytų bitės išlikimas. Galbūt priklauso. Galbūt, jei pakankamai tiksliai užfiksuosime tai, kas dingsta, tai nedings.",
+      "image_prompt": "Scientific anatomical illustration of bee proboscis and tongue in extreme magnification, rendered with Victorian natural history precision. Detailed cross-section showing internal structure with labeled parts that dissolve into digital static. Pollen yellow specimen against ash white background, bruised violet anatomical shading, dried honey amber preservation fluid suggestion, deep forest shadow depth. Clinical yet mournful atmosphere of specimen documentation. Clean scientific plate composition. Square format.",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 7,
+      "artist": "Darius Mikalajūnas",
+      "title_lt": "Medaus fosilija",
+      "year": "2026",
+      "medium_lt": "3D vizualizacija",
+      "statement_lt": "Projektuoju ateities muziejų eksponatus. Šis darbas – medaus gabalas, užkonservuotas kaip gintaras, su bite viduje. Bet tai ne praeities gintaras. Tai ateities fosilija – mūsų laikų reliktas, kurį atras civilizacija, nebežinanti, kas buvo bitės. Jie matys vabzdį, bet nesupras, kodėl jis buvo toks svarbus. Kontekstas bus prarastas kartu su mumis.",
+      "image_prompt": "Photorealistic 3D render of amber-like honey preservation containing single frozen bee specimen, museum display style. Bee appears translucent and spectral within the dried honey amber medium. Microscopic air bubbles and botanical debris suspended around it. Pollen yellow light passing through, bruised violet refractions, ash white museum pedestal base, deep forest shadow background. Archaeological future artifact atmosphere. Clinical lighting from above. Square format, centered specimen.",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 8,
+      "artist": "Simona Bareikytė",
+      "title_lt": "Tuščia celė",
+      "year": "2026",
+      "medium_lt": "Makrofotografija",
+      "statement_lt": "Mano fotoaparatas mato tai, ko akis negali – tuščias korių celes, kuriose turėtų būti gyvybė. Kiekviena šešiakampė erdvė yra mažas namas, mažas pasaulis, mažas pažadas. Dabar jie tušti. Fotografuoju architektūrą be gyventojų, miestus be žmonių. Bitės buvo architektės. Jų pastatai stovi, bet niekas juose nebegyvena. Kas yra namas be namų?",
+      "image_prompt": "Extreme macro photograph of empty honeycomb cells, hexagonal architecture rendered with scientific precision. Some cells corrupted, edges dissolving into digital noise. Dried honey amber residue coating walls, pollen yellow light catching wax textures, bruised violet shadows in cell depths, ash white overexposed highlights, deep forest shadow backgrounds. Abandoned architectural atmosphere, meditation on vacancy. Sharp focus center with corrupted soft edges. Square format, geometric pattern dominant.",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 9,
+      "artist": "Henrik Lindström",
+      "title_lt": "Kolektyvinio proto fragmentai",
+      "year": "2026",
+      "medium_lt": "Generatyvinis menas",
+      "statement_lt": "Menininkas Henrik Lindström dirba su dirbtinio intelekto sistemomis, mokydamas jas atpažinti bičių elgesio modelius. Jo naujausiame darbe algoritmas bando rekonstruoti bičių spiečiaus kolektyvinį protą iš fragmentuotų duomenų. Rezultatas – vizualizacija, rodanti tūkstančius individualių sprendimų, kurie kartu sukuria vieną organizmą. Sistema rodo tai, kas liko, kai organizmas suyra.",
+      "image_prompt": "Abstract generative visualization of swarm intelligence patterns, thousands of translucent spectral bee flight paths creating complex network. Data visualization aesthetic merged with botanical illustration precision. Paths dissolving and corrupting at edges. Pollen yellow node points, bruised violet connecting lines, dried honey amber warm clusters, ash white background matrix, deep forest shadow void areas. Scientific yet ethereal atmosphere of collective consciousness fragmenting. Square format, centered radial composition.",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 10,
+      "artist": "Rūta Kazickienė",
+      "title_lt": "Motinos portretas su dingusiais vaikais",
+      "year": "2026",
+      "medium_lt": "Skaitmeninė tapyba",
+      "statement_lt": "Tapau karalienę – vienintelę bitę, kuri lieka, kai kitos dingsta. Ji sėdi tuščiame avilyje, apsuptas erdvės, kur turėtų būti tūkstančiai jos dukterų. Tai motinystės portretas be vaikų, šeimos portretas be šeimos. Jos akys mato tai, ko aš negaliu įsivaizduoti – pasaulį, kuris turėjo būti kupinas gyvybės, bet kuris tuščias.",
+      "image_prompt": "Portrait of queen bee rendered with classical portraiture dignity, surrounded by empty honeycomb throne. Scientific botanical illustration precision for her body, but she appears slightly translucent, spectral. Empty spaces where worker bees should be visible as ghostly silhouettes. Pollen yellow royal jelly details, bruised violet melancholic shadows, dried honey amber throne warmth, ash white void spaces, deep forest shadow vignette. Maternal grief atmosphere. Square format, centered subject.",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 11,
+      "artist": "Tomas Grinius",
+      "title_lt": "Apdulkinimo protokolas (nutrauktas)",
+      "year": "2026",
+      "medium_lt": "Infografika, mišri technika",
+      "statement_lt": "Dirbu duomenų vizualizacijos srityje. Šis darbas – apdulkinimo proceso schema, parodanti, kaip bitė perkelia žiedadulkes nuo vieno žiedo prie kito. Bet schema nutrūksta viduryje. Duomenys baigiasi. Procesas, kuris vyko milijonus metų, sustoja mano diagramoje ties 2026 metais. Likusi infografikos dalis yra tuščia – vieta procesui, kuris nebeįvyks.",
+      "image_prompt": "Scientific infographic illustration showing pollination process with botanical precision, bee transferring pollen between flowers. Process diagram that abruptly stops mid-sequence, remaining steps corrupted into digital static and void. Clean instructional aesthetic with data corruption. Pollen yellow transfer particles, bruised violet flower anatomy, dried honey amber connecting arrows, ash white diagram background, deep forest shadow where data ends. Clinical educational style meeting entropy. Square format.",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 12,
+      "artist": "Živilė Marcinkevičiūtė",
+      "title_lt": "Gėlė, kuri nebežydi niekam",
+      "year": "2026",
+      "medium_lt": "Botaninė akvarelė su skaitmeniniu ištrinimu",
+      "statement_lt": "Mano močiutė mokė mane piešti gėles. Sakė, kad gėlė be bitės yra kaip širdis be meilės – graži, bet tuščia. Šioje akvarelėje nutapiau tobulą žiedą, bet ištryniau tuos jo fragmentus, kuriuos liestų bitė. Liko gėlė su skylėmis ten, kur turėtų būti prisilietimas. Tai portretas laukimo, kuris niekada nesibaigs susitikimu.",
+      "image_prompt": "Delicate botanical watercolor of perfect flower specimen with scientific accuracy, but sections strategically erased where bee would land and touch. Missing petals, absent stamens, corrupted pistil. Ghost outline of spectral bee barely visible approaching. Pollen yellow stamen remnants, bruised violet petal shadows, dried honey amber center, ash white paper showing through erasures, deep forest shadow background. Longing and absence atmosphere. Traditional botanical plate composition. Square format.",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 13,
+      "artist": "Markas Davidovičius",
+      "title_lt": "Geluonies muziejus",
+      "year": "2026",
+      "medium_lt": "Instaliacijos dokumentacija",
+      "statement_lt": "Renku geluonis. Kiekviena yra mirtis – bitė, kuri įgėlė, miršta. Anksčiau tai buvo kasdienybė. Dabar kiekviena geluonis yra retenybė, relikvija. Mano muziejuje jos sudėtos kaip kardai karo muziejuje – ginklai, kurių niekas nebenaudoja. Dokumentuoju šią kolekciją kaip įrodymą, kad jos egzistavo. Kad jos gynėsi. Kad jos kovojo iki galo.",
+      "image_prompt": "Museum display documentation of bee stingers arranged like precious artifacts in specimen cases. Each stinger rendered with microscopic botanical illustration detail but appearing translucent and spectral. Glass cases, archival labels, clinical lighting. Pollen yellow specimen pins, bruised violet velvet display backing, dried honey amber aged labels, ash white museum lighting, deep forest shadow display case interiors. Forensic archive atmosphere of extinct weaponry. Square format, grid arrangement.",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 14,
+      "artist": "Ona Skrupskelytė",
+      "title_lt": "Pasakų knyga be bičių",
+      "year": "2026",
+      "medium_lt": "Iliustruotas kolažas",
+      "statement_lt": "Kuriu iliustruotas knygas vaikams. Bet kaip papasakoti apie bites vaikams, kurie jų niekada nematys? Šis darbas – pasakos puslapis, kuriame bitė turėtų būti pagrindinė veikėja. Bet jos siluetas tik nujaučiamas – tuščia vieta tekste ir paveiksle. Tai pasaka su dingusiu herojumi, istorija su ištrinta protagoniste.",
+      "image_prompt": "Children's book illustration page showing fairy tale garden scene with botanical precision, but bee character represented only as empty silhouette outline, missing from the narrative. Flowers lean toward absence, waiting. Storybook whimsy merged with scientific illustration and digital corruption. Pollen yellow sunny garden, bruised violet magical shadows, dried honey amber nostalgic warmth, ash white page borders, deep forest shadow mysterious areas. Bittersweet innocence atmosphere. Square format, illustration plate style.",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 15,
+      "artist": "Gediminas Povilaitis",
+      "title_lt": "Dūmų kalba",
+      "year": "2026",
+      "medium_lt": "Dokumentinė fotografija",
+      "statement_lt": "Fotografuoju bitininkus – žmones, kurie dar kalba su bitėmis. Jie naudoja dūmus, kad nuramintų spiečius. Bet ką reiškia raminti tuos, kurių nebėra? Šioje fotografijoje senas bitininkas pučia dūmus į tuščią avilį. Tai gestas, tapęs ritualu, ritualu tapęs atmintimi. Jis kalba kalba, kurios niekas nebesupranta ir niekas nebeatsako.",
+      "image_prompt": "Documentary photograph of elderly beekeeper's hands holding smoker, releasing smoke toward empty hive. Smoke rendered with botanical precision showing particle structure. Spectral translucent bees appear faintly in smoke patterns. Weathered hands, aged equipment with deep texture detail. Pollen yellow smoke highlights, bruised violet hand shadows, dried honey amber aged skin tones, ash white smoke billows, deep forest shadow background. Ritualistic grief atmosphere. Square format, focus on gesture.",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 16,
+      "artist": "Viktorija Narbutaitė",
+      "title_lt": "Algoritmas atpažįsta gėlę, bet neranda bitės",
+      "year": "2026",
+      "medium_lt": "Konceptuali skaitmeninė kompozicija",
+      "statement_lt": "Dirbu su atpažinimo algoritmais. Maitinu juos tūkstančiais bičių nuotraukų, bet jie nebegali jų rasti tikrovėje. Sistema piešia rėmelius aplink gėles, ieškodama bičių, bet rėmeliai lieka tušti. Tai technologijos akimirka, kai ji supranta praradimą. Mašina ieško to, ko nebėra, ir jos paieškos rezultatai yra tuštuma.",
+      "image_prompt": "Computer vision interface showing botanical photograph with AI detection boxes around flowers but empty boxes where bees should be detected. Error messages in margins, confidence percentages dropping to zero. Scientific flower rendering with digital interface overlay corrupting at edges. Pollen yellow detection highlights, bruised violet error states, dried honey amber interface warmth, ash white scanning lines, deep forest shadow failed search areas. Technological grief atmosphere. Square format, screen capture aesthetic.",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 17,
+      "artist": "Paulius Stankevičius",
+      "title_lt": "Skrydžio trajektorija (rekonstrukcija)",
+      "year": "2026",
+      "medium_lt": "Erdvinė duomenų vizualizacija",
+      "statement_lt": "Rekonstruoju bičių skrydžio trajektorijas iš senų mokslinių tyrimų duomenų. Kiekviena linija erdvėje yra kelionė, kurią kažkada atliko tikra bitė. Dabar šios trajektorijos kabo kaip vaiduoklių takai – maršrutai be keliautojų, keliai be ėjikų. Mano vizualizacija yra paminklas judėjimui, kuris sustojo.",
+      "image_prompt": "Three-dimensional visualization of bee flight paths reconstructed from archival data, trajectories rendered as delicate golden threads in space. Paths dissolve and corrupt before reaching destinations. Spectral translucent bee at origin point of each trajectory. Botanical flowers as waypoints with scientific precision. Pollen yellow flight lines, bruised violet spatial depth, dried honey amber path warmth, ash white background void, deep forest shadow distant space. Memorial atmosphere. Square format, depth perspective.",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 18,
+      "artist": "Agnė Šimkutė",
+      "title_lt": "Vaško luitas",
+      "year": "2026",
+      "medium_lt": "Skulptūros dokumentacija",
+      "statement_lt": "Iš paskutinių bičių vaško sukūriau luitą – formą be formos, medžiagą be funkcijos. Vaškas, kuris turėjo tapti koriais, dabar yra tik masė. Dokumentuoju šią skulptūrą kaip materialų liudijimą – įrodymą, kad kažkada buvo bitės, kurios gamino šią medžiagą. Luitas yra potencialas, kuris niekada nebus realizuotas.",
+      "image_prompt": "Sculptural documentation of raw beeswax ingot displayed as museum artifact, showing texture and translucency of material with scientific precision. Subtle honeycomb pattern trying to emerge but remaining formless. Spectral bee shadows visible within wax mass. Pollen yellow wax luminosity, bruised violet shadows, dried honey amber rich depths, ash white museum pedestal, deep forest shadow background. Archaeological specimen atmosphere. Square format, formal documentation lighting.",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 19,
+      "artist": "Ignas Rudys",
+      "title_lt": "Paskutinis šokis",
+      "year": "2026",
+      "medium_lt": "Choreografinė notacija, skaitmeninė",
+      "statement_lt": "Bitės šoka – jų šokis yra kalba, pasakojanti apie maisto šaltinius. Užrašiau šį šokį choreografine notacija, kaip užrašomi baleto žingsniai. Bet ši partitura nebeturi atlikėjų. Tai šokio instrukcija šokėjams, kurių nebėra. Kas skaito natas, kai nebėra muzikantų? Kas supranta šokį, kai nebėra šokėjų?",
+      "image_prompt": "Dance notation diagram documenting bee waggle dance with botanical and scientific precision, movement patterns shown as elegant geometric sequences. Notation corrupts and fades at edges, steps leading nowhere. Spectral translucent bee figure demonstrated mid-dance. Pollen yellow movement indicators, bruised violet rhythm markers, dried honey amber aged notation paper, ash white background, deep forest shadow where choreography ends. Archival performance atmosphere. Square format, technical diagram style.",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 20,
+      "artist": "Kristina Baužienė",
+      "title_lt": "Devyni gyvenimai meduje",
+      "year": "2026",
+      "medium_lt": "Serija fotografijų",
+      "statement_lt": "Menininkė Kristina Baužienė dokumentuoja medų kaip laiko kapsulę. Kiekviena fotografija serijos rodo medaus stiklainyje išlikusias detales – žiedadulkių grūdelius, mikroskopinius sparnų fragmentus, laiko pėdsakus. Medus išsaugo tai, ko mes nebesugebame išsaugoti. Jis yra atmintis skystoje formoje, archyvas, kurį galima paragauti.",
+      "image_prompt": "Macro photograph series panel showing honey jar contents with scientific specimen precision, suspended pollen grains, microscopic wing fragments, trapped air bubbles preserving time. Spectral bee reflection on glass surface. Extreme detail of amber liquid depths with botanical debris. Pollen yellow light refraction, bruised violet glass shadows, dried honey amber dominant medium, ash white label fragments, deep forest shadow background. Archaeological preservation atmosphere. Square format, specimen documentation style.",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 21,
+      "artist": "Andrius Kairys",
+      "title_lt": "Mito rekonstrukcija: bitė ir dievas",
+      "year": "2026",
+      "medium_lt": "Mitologinė iliustracija",
+      "statement_lt": "Senovės lietuvių mitologijoje bitė buvo šventa. Žmonės tikėjo, kad bitės neša dievų žinias. Ši iliustracija rekonstruoja mitą, kurio nebeprisimename, apie dievą, kuris kalbėjo per bites. Kai bitės išnyko, dievas nutilo. Mitas baigiasi ne katastrofa, o tyla. Tyliausia istorijos pabaiga – kai nebelieka kam klausyti.",
+      "image_prompt": "Mythological illustration depicting Baltic deity communicating through sacred bees, ancient manuscript illumination style merged with botanical scientific precision. God figure dissolving into spectral form as bees fade to translucent ghosts. Symbolic imagery with folk art patterns corrupting digitally. Pollen yellow divine light, bruised violet mythic shadows, dried honey amber aged manuscript glow, ash white sacred space, deep forest shadow ancient mystery. Spiritual archaeology atmosphere. Square format, illuminated manuscript composition.",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 22,
+      "artist": "Laura Savickaitė",
+      "title_lt": "Alergijos nebebus",
+      "year": "2026",
+      "medium_lt": "Konceptualus fotomontažas",
+      "statement_lt": "Mano sūnus alergiškas bitėms. Visą gyvenimą bijojau, kad jį įgels. Dabar suprantu, kad jam niekada neteks bijoti. Jis niekada nepatirs to, ko bijojosi. Tai keista paguoda – saugumas, kuris ateina su praradimu. Šis darbas – apie palengvėjimą, kuris yra liūdesys. Apie baimę, kuri nebebus, nes nebebus ko bijoti.",
+      "image_prompt": "Conceptual photomontage of empty EpiPen case displayed like obsolete medical artifact, botanical allergy warning illustrations fading around it. Spectral translucent bee sting site on skin that will never occur. Medical documentation meets museum display aesthetic with digital corruption. Pollen yellow warning symbols, bruised violet allergic reaction absence, dried honey amber case patina, ash white clinical lighting, deep forest shadow medical uncertainty. Bittersweet relief atmosphere. Square format, medical specimen style.",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 23,
+      "artist": "Gabrielė Žukaitė",
+      "title_lt": "Vaiko klausimas",
+      "year": "2026",
+      "medium_lt": "Iliustracija, skaitmeninė",
+      "statement_lt": "Mano dukra paklausė: kas yra bitė? Parodžiau paveikslėlį. Ji paklausė: galiu pamatyti tikrą? Nežinojau, ką atsakyti. Šis darbas – atsakymas, kurio nedaviau. Tai bitė, nupiešta pagal vaiką, kuris jos niekada nematė, kuriam ji bus tik žodis, tik paveikslas, tik pasaka. Tikrovė, tapusi fikcija per vieną kartą.",
+      "image_prompt": "Child-like drawing of bee merged with scientific botanical illustration, innocence meeting precision. Drawing attempts accuracy but shows gaps in understanding, missing details. Spectral actual bee hovering beside drawing for comparison, translucent and fading. Picture book page aesthetic with digital decay. Pollen yellow crayon marks, bruised violet shadows, dried honey amber nostalgic warmth, ash white paper, deep forest shadow unknown areas. Generational knowledge loss atmosphere. Square format, educational illustration style.",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 24,
+      "artist": "Linas Vaitiekūnas",
+      "title_lt": "Paskutinis archyvo puslapis",
+      "year": "2026",
+      "medium_lt": "Archyvinė dokumentacija, skaitmeninis perdirbimas",
+      "statement_lt": "Baigiu šį archyvą žinodamas, kad kiekvienas baigtas archyvas yra pripažinimas, jog subjektas baigėsi. Paskutinis puslapis yra ne kulminacija, o kapituliacija. Čia sudedu viską – visą tą tylą, kuri ateina prieš nebūtį. Šis puslapis yra tuščias ne todėl, kad neturiu ką pasakyti, o todėl, kad nebėra apie ką pasakyti. Archyvas baigtas. Bitės dingo.",
+      "image_prompt": "Final archive page of natural history documentation, mostly empty with corrupted botanical borders dissolving into digital void. Single spectral translucent bee specimen in center, barely visible, fading. Archival stamps, catalog numbers, filing marks all degrading. Document reaching end of its documentation purpose. Pollen yellow faded marginalia, bruised violet archival shadows, dried honey amber aged paper, ash white dominant emptiness, deep forest shadow encroaching void. Completion and ending atmosphere. Square format, formal archive plate layout.",
+      "image_filename": "",
+      "target_filename": ""
+    }
+  ],
+  "poster_prompt": "Hyper-detailed botanical illustration of a wilting flower specimen, scientific precision with deliberate visual corruption and missing petal sections as if data has decayed. A single translucent spectral bee hovers near the bloom, semi-transparent and ghostly, never fully solid. Composition resembles an archival natural history museum plate from a near-future archive. Extreme botanical detail in remaining sections contrasts with void spaces where information has been lost. Color palette of pollen yellow, bruised violet, dried honey amber, ash white, and deep forest shadow. Atmospheric dust particles float in soft diffused light. Melancholic stillness pervades the scene. Gallery-quality fine art print aesthetic. Square format. No text, no typography, no logos, no words.",
+  "social_caption_lt": "Tylus pasaulis be dūzgimo. Kur dingo bitės, kurios kadaise pildė mūsų sodus gyvybe? Ši paroda kviečia sustoti ir įsiklausyti į tylą — tą, kuri ateina prieš nebūtį. Aplankyk ir pajusk, ko netenkame, kol dar nevėlu."
+}
