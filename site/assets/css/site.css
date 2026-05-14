@@ -513,6 +513,72 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
 body.mode-static .info-toggle { background: linear-gradient(to top, rgba(13,12,10,0.9), transparent); }
 body.mode-ar .launcher { display: none; }
 
+/* Camera-overlay AR (replaces broken MindAR tracking) */
+.cam-video {
+  position: fixed; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  background: #000;
+  display: none;
+}
+body.mode-ar .cam-video { display: block; }
+
+.ar-view {
+  position: fixed; inset: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1.5rem 6rem;
+  pointer-events: auto;
+}
+.ar-view__card {
+  width: min(78vw, 420px);
+  aspect-ratio: 1 / 1;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #0d0c0a;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(244, 241, 234, 0.15);
+  transform: perspective(800px) rotateX(2deg);
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+.ar-view__card:hover { transform: perspective(800px) rotateX(0deg) scale(1.02); }
+.ar-view__card img {
+  width: 100%; height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.ar-view__hint {
+  margin-top: 1.5rem;
+  padding: 0.5rem 1rem;
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: rgba(244, 241, 234, 0.85);
+  background: rgba(13, 12, 10, 0.55);
+  border-radius: 3px;
+  text-align: center;
+  max-width: 320px;
+}
+
+.ar-header__stop {
+  background: none;
+  border: 1px solid rgba(244, 241, 234, 0.4);
+  color: rgba(244, 241, 234, 0.9);
+  border-radius: 50%;
+  width: 32px; height: 32px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.ar-header__stop:hover { background: rgba(244, 241, 234, 0.15); }
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }

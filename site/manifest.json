@@ -1,6 +1,6 @@
 {
   "month": "2026-05",
-  "generated_at": "2026-05-14T17:07:54.539886+00:00",
+  "generated_at": "2026-05-14T19:16:39.835458+00:00",
   "theme": {
     "title": "Kur dingo bitės?",
     "subtitle": "Paroda apie tylą, kuri ateina prieš nebūtį.",
@@ -13,7 +13,7 @@
   "artworks": [
     {
       "id": 1,
-      "artist": "Vytautas Rimkevičius",
+      "artist": "",
       "title_lt": "Paskutinė inventorizacija",
       "url": "https://miskogalerija.lt/qr/1.html",
       "image": "/exhibitions/2026-05/images/01.png",
@@ -21,7 +21,7 @@
     },
     {
       "id": 2,
-      "artist": "Elena Mockutė-Strand",
+      "artist": "",
       "title_lt": "Žiedadulkių kartografija",
       "url": "https://miskogalerija.lt/qr/2.html",
       "image": "/exhibitions/2026-05/images/02.png",
@@ -29,7 +29,7 @@
     },
     {
       "id": 3,
-      "artist": "Jonas Kazlauskas",
+      "artist": "",
       "title_lt": "Tylus avilys",
       "url": "https://miskogalerija.lt/qr/3.html",
       "image": "/exhibitions/2026-05/images/03.png",
@@ -37,7 +37,7 @@
     },
     {
       "id": 4,
-      "artist": "Mira Volkov",
+      "artist": "",
       "title_lt": "Nektaro sapnas Nr. 7",
       "url": "https://miskogalerija.lt/qr/4.html",
       "image": "/exhibitions/2026-05/images/04.png",
@@ -45,7 +45,7 @@
     },
     {
       "id": 5,
-      "artist": "Augustinas Balčiūnas",
+      "artist": "",
       "title_lt": "Šešių kojų malda",
       "url": "https://miskogalerija.lt/qr/5.html",
       "image": "/exhibitions/2026-05/images/05.png",
@@ -53,7 +53,7 @@
     },
     {
       "id": 6,
-      "artist": "Kotryna Vaitkutė",
+      "artist": "",
       "title_lt": "Anatomija #12: Liežuvėlis",
       "url": "https://miskogalerija.lt/qr/6.html",
       "image": "/exhibitions/2026-05/images/06.png",
@@ -61,7 +61,7 @@
     },
     {
       "id": 7,
-      "artist": "Darius Mikalajūnas",
+      "artist": "",
       "title_lt": "Medaus fosilija",
       "url": "https://miskogalerija.lt/qr/7.html",
       "image": "/exhibitions/2026-05/images/07.png",
@@ -69,7 +69,7 @@
     },
     {
       "id": 8,
-      "artist": "Simona Bareikytė",
+      "artist": "",
       "title_lt": "Tuščia celė",
       "url": "https://miskogalerija.lt/qr/8.html",
       "image": "/exhibitions/2026-05/images/08.png",
@@ -77,7 +77,7 @@
     },
     {
       "id": 9,
-      "artist": "Henrik Lindström",
+      "artist": "",
       "title_lt": "Kolektyvinio proto fragmentai",
       "url": "https://miskogalerija.lt/qr/9.html",
       "image": "/exhibitions/2026-05/images/09.png",
@@ -85,7 +85,7 @@
     },
     {
       "id": 10,
-      "artist": "Rūta Kazickienė",
+      "artist": "",
       "title_lt": "Motinos portretas su dingusiais vaikais",
       "url": "https://miskogalerija.lt/qr/10.html",
       "image": "/exhibitions/2026-05/images/10.png",
@@ -93,7 +93,7 @@
     },
     {
       "id": 11,
-      "artist": "Tomas Grinius",
+      "artist": "",
       "title_lt": "Apdulkinimo protokolas (nutrauktas)",
       "url": "https://miskogalerija.lt/qr/11.html",
       "image": "/exhibitions/2026-05/images/11.png",
@@ -101,7 +101,7 @@
     },
     {
       "id": 12,
-      "artist": "Živilė Marcinkevičiūtė",
+      "artist": "",
       "title_lt": "Gėlė, kuri nebežydi niekam",
       "url": "https://miskogalerija.lt/qr/12.html",
       "image": "/exhibitions/2026-05/images/12.png",
@@ -109,7 +109,7 @@
     },
     {
       "id": 13,
-      "artist": "Markas Davidovičius",
+      "artist": "",
       "title_lt": "Geluonies muziejus",
       "url": "https://miskogalerija.lt/qr/13.html",
       "image": "/exhibitions/2026-05/images/13.png",
@@ -117,7 +117,7 @@
     },
     {
       "id": 14,
-      "artist": "Ona Skrupskelytė",
+      "artist": "",
       "title_lt": "Pasakų knyga be bičių",
       "url": "https://miskogalerija.lt/qr/14.html",
       "image": "/exhibitions/2026-05/images/14.png",
@@ -125,7 +125,7 @@
     },
     {
       "id": 15,
-      "artist": "Gediminas Povilaitis",
+      "artist": "",
       "title_lt": "Dūmų kalba",
       "url": "https://miskogalerija.lt/qr/15.html",
       "image": "/exhibitions/2026-05/images/15.png",
@@ -133,7 +133,7 @@
     },
     {
       "id": 16,
-      "artist": "Viktorija Narbutaitė",
+      "artist": "",
       "title_lt": "Algoritmas atpažįsta gėlę, bet neranda bitės",
       "url": "https://miskogalerija.lt/qr/16.html",
       "image": "/exhibitions/2026-05/images/16.png",
@@ -141,7 +141,7 @@
     },
     {
       "id": 17,
-      "artist": "Paulius Stankevičius",
+      "artist": "",
       "title_lt": "Skrydžio trajektorija (rekonstrukcija)",
       "url": "https://miskogalerija.lt/qr/17.html",
       "image": "/exhibitions/2026-05/images/17.png",
@@ -149,7 +149,7 @@
     },
     {
       "id": 18,
-      "artist": "Agnė Šimkutė",
+      "artist": "",
       "title_lt": "Vaško luitas",
       "url": "https://miskogalerija.lt/qr/18.html",
       "image": "/exhibitions/2026-05/images/18.png",
@@ -157,7 +157,7 @@
     },
     {
       "id": 19,
-      "artist": "Ignas Rudys",
+      "artist": "",
       "title_lt": "Paskutinis šokis",
       "url": "https://miskogalerija.lt/qr/19.html",
       "image": "/exhibitions/2026-05/images/19.png",
@@ -165,7 +165,7 @@
     },
     {
       "id": 20,
-      "artist": "Kristina Baužienė",
+      "artist": "",
       "title_lt": "Devyni gyvenimai meduje",
       "url": "https://miskogalerija.lt/qr/20.html",
       "image": "/exhibitions/2026-05/images/20.png",
@@ -173,7 +173,7 @@
     },
     {
       "id": 21,
-      "artist": "Andrius Kairys",
+      "artist": "",
       "title_lt": "Mito rekonstrukcija: bitė ir dievas",
       "url": "https://miskogalerija.lt/qr/21.html",
       "image": "/exhibitions/2026-05/images/21.png",
@@ -181,7 +181,7 @@
     },
     {
       "id": 22,
-      "artist": "Laura Savickaitė",
+      "artist": "",
       "title_lt": "Alergijos nebebus",
       "url": "https://miskogalerija.lt/qr/22.html",
       "image": "/exhibitions/2026-05/images/22.png",
@@ -189,7 +189,7 @@
     },
     {
       "id": 23,
-      "artist": "Gabrielė Žukaitė",
+      "artist": "",
       "title_lt": "Vaiko klausimas",
       "url": "https://miskogalerija.lt/qr/23.html",
       "image": "/exhibitions/2026-05/images/23.png",
@@ -197,7 +197,7 @@
     },
     {
       "id": 24,
-      "artist": "Linas Vaitiekūnas",
+      "artist": "",
       "title_lt": "Paskutinis archyvo puslapis",
       "url": "https://miskogalerija.lt/qr/24.html",
       "image": "/exhibitions/2026-05/images/24.png",

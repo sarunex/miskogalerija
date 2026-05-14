@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Motinos portretas su dingusiais vaikais — Rūta Kazickienė — Miško Galerija</title>
+  <title>Motinos portretas su dingusiais vaikais — Miško Galerija</title>
   <meta name="description" content="Paroda apie tylą, kuri ateina prieš nebūtį.">
   <meta property="og:title" content="Miško Galerija — Kur dingo bitės?">
   <meta property="og:description" content="Paroda apie tylą, kuri ateina prieš nebūtį.">
@@ -12,25 +12,20 @@
   <meta name="theme-color" content="#0d0c0a">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><circle cx='12' cy='12' r='10' fill='%230d0c0a'/></svg>">
   <link rel="stylesheet" href="/assets/css/site.css">
-<script src="https://cdn.jsdelivr.net/npm/aframe@1.5.0/dist/aframe-master.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
 </head>
 <body class="page-ar">
 
-<!-- Hidden image used as the AR plane texture -->
-<a-assets-preload>
-  <img id="art-img" src="/exhibitions/2026-05/images/10.png" crossorigin="anonymous">
-</a-assets-preload>
+<!-- Camera viewfinder (hidden until the visitor opts in) -->
+<video id="cam-video" class="cam-video" autoplay muted playsinline></video>
 
-
-<!-- UI overlay: launcher, instructions, fallback view, info sheet -->
 <div id="overlay" class="overlay">
   <header class="ar-header">
     <a href="/" class="ar-header__home" aria-label="Į pradžią">←</a>
     <span class="ar-header__num">№ 10 / 24</span>
+    <button id="cam-stop" class="ar-header__stop" hidden aria-label="Sustabdyti kamerą">✕</button>
   </header>
 
-  <!-- Launcher state: shown first, lets user opt into camera -->
+  <!-- Launcher state: shown first, lets the visitor pick how to view -->
   <section id="launcher" class="launcher">
     <figure class="launcher__art">
       <img src="/exhibitions/2026-05/images/10.png" alt="Motinos portretas su dingusiais vaikais">
@@ -38,26 +33,31 @@
     <div class="launcher__copy">
       <p class="eyebrow">Kur dingo bitės?</p>
       <h1>Motinos portretas su dingusiais vaikais</h1>
-      <p class="byline">Rūta Kazickienė, 2026 · Skaitmeninė tapyba</p>
-      <button id="start-static" class="btn-secondary">Žiūrėti be kameros</button>
+      <p class="byline">Skaitmeninė tapyba, 2026</p>
+      <button id="start-ar" class="btn-primary" hidden>
+        <span>Įjungti kamerą</span>
+        <small>Pažiūrėk kūrinį per savo kamerą miške</small>
+      </button>
+      <button id="start-static" class="btn-secondary">Žiūrėti kūrinį</button>
     </div>
   </section>
 
-  <!-- Scanning hint shown during AR -->
-  <div id="scan-hint" class="scan-hint" hidden>
-    <div class="scan-hint__frame"></div>
-    <p>Nukreipk telefoną į QR plokštelę</p>
-    <button id="give-up" class="btn-text">Nepavyksta? Žiūrėti be kameros →</button>
-  </div>
-
-  <!-- Static fallback view -->
+  <!-- Static fallback view: just the artwork, fullscreen -->
   <section id="static-view" class="static-view" hidden>
     <figure class="static-view__art">
       <img src="/exhibitions/2026-05/images/10.png" alt="Motinos portretas su dingusiais vaikais">
     </figure>
   </section>
 
-  <!-- Always-available info sheet (slides up) -->
+  <!-- AR camera-overlay view: video background + floating artwork card -->
+  <section id="ar-view" class="ar-view" hidden>
+    <div class="ar-view__card">
+      <img src="/exhibitions/2026-05/images/10.png" alt="Motinos portretas su dingusiais vaikais">
+    </div>
+    <p class="ar-view__hint">Atsargiai pakreipk telefoną. Bakstelėk vaizdą, kad uždarytum.</p>
+  </section>
+
+  <!-- Info sheet (slides up from bottom) -->
   <button id="info-toggle" class="info-toggle" aria-expanded="false">
     <span class="info-toggle__label">Apie kūrinį</span>
     <span class="info-toggle__chevron">↑</span>
@@ -66,7 +66,7 @@
     <div class="info-sheet__inner">
       <p class="eyebrow">№ 10 · Gegužės 2026</p>
       <h2>Motinos portretas su dingusiais vaikais</h2>
-      <p class="byline">Rūta Kazickienė · Skaitmeninė tapyba, 2026</p>
+      <p class="byline">Skaitmeninė tapyba, 2026</p>
       <div class="statement">
         <p>Tapau karalienę – vienintelę bitę, kuri lieka, kai kitos dingsta. Ji sėdi tuščiame avilyje, apsuptas erdvės, kur turėtų būti tūkstančiai jos dukterų. Tai motinystės portretas be vaikų, šeimos portretas be šeimos. Jos akys mato tai, ko aš negaliu įsivaizduoti – pasaulį, kuris turėjo būti kupinas gyvybės, bet kuris tuščias.</p>
       </div>
@@ -84,69 +84,81 @@
 <script>
 (function () {
   'use strict';
-  const SCAN_TIMEOUT_MS = 8000;          // give up tracking after 8s
-  const hasARScene = false;
-
   const $ = (id) => document.getElementById(id);
-  const launcher = $('launcher');
-  const scanHint = $('scan-hint');
+  const launcher   = $('launcher');
   const staticView = $('static-view');
-  const arScene = $('ar-scene');
+  const arView     = $('ar-view');
+  const video      = $('cam-video');
+  const startAR    = $('start-ar');
+  const startStatic= $('start-static');
+  const stopBtn    = $('cam-stop');
+
+  let stream = null;
+
+  // Capability check: only show AR button if camera works in the browser
+  const canCamera = navigator.mediaDevices
+    && typeof navigator.mediaDevices.getUserMedia === 'function';
+  if (canCamera) {
+    startAR.hidden = false;
+  }
 
   function showStatic() {
-    if (arScene) arScene.style.display = 'none';
-    if (scanHint) scanHint.hidden = true;
-    launcher.hidden = true;
+    stopCamera();
+    launcher.hidden  = true;
+    arView.hidden    = true;
     staticView.hidden = false;
+    document.body.classList.remove('mode-ar');
     document.body.classList.add('mode-static');
   }
 
-  function showAR() {
-    if (!hasARScene || !arScene) { showStatic(); return; }
-    launcher.hidden = true;
-    scanHint.hidden = false;
+  async function showAR() {
+    if (!canCamera) { showStatic(); return; }
+    try {
+      stream = await navigator.mediaDevices.getUserMedia({
+        video: { facingMode: { ideal: 'environment' } },
+        audio: false,
+      });
+    } catch (err) {
+      // Permission denied or no rear camera — silently fall back
+      console.warn('Camera unavailable:', err);
+      showStatic();
+      return;
+    }
+    video.srcObject = stream;
+    launcher.hidden  = true;
+    staticView.hidden= true;
+    arView.hidden    = false;
+    stopBtn.hidden   = false;
+    document.body.classList.remove('mode-static');
     document.body.classList.add('mode-ar');
-    const sys = arScene.systems['mindar-image-system'];
-    sys.start();
-
-    let found = false;
-    const targetEl = arScene.querySelector('[mindar-image-target]');
-    targetEl.addEventListener('targetFound', () => {
-      found = true;
-      scanHint.hidden = true;
-    });
-    targetEl.addEventListener('targetLost', () => {
-      // brief disappearance is fine; only re-show hint after 1.5s
-      setTimeout(() => {
-        if (!targetEl.object3D.visible && !staticView.hidden === false) {
-          scanHint.hidden = false;
-        }
-      }, 1500);
-    });
-
-    // Hard timeout: if no track in 8s, gracefully fall back
-    setTimeout(() => {
-      if (!found) showStatic();
-    }, SCAN_TIMEOUT_MS);
   }
 
-  // Capability check: getUserMedia + decent device
-  const canDoAR = hasARScene
-    && navigator.mediaDevices
-    && typeof navigator.mediaDevices.getUserMedia === 'function';
-
-  if (!canDoAR) {
-    // Hide AR button if it's there
-    const btn = $('start-ar'); if (btn) btn.style.display = 'none';
+  function stopCamera() {
+    if (stream) {
+      stream.getTracks().forEach(t => t.stop());
+      stream = null;
+    }
+    video.srcObject = null;
+    stopBtn.hidden = true;
   }
 
-  $('start-ar')?.addEventListener('click', showAR);
-  $('start-static').addEventListener('click', showStatic);
-  $('give-up')?.addEventListener('click', showStatic);
+  startAR.addEventListener('click', showAR);
+  startStatic.addEventListener('click', showStatic);
+  stopBtn.addEventListener('click', showStatic);
+  // Tap the AR card to return to the artwork-only view
+  arView.addEventListener('click', (e) => {
+    // Don't trigger when tapping the hint text directly — only the card area
+    if (e.target.closest('.ar-view__card')) showStatic();
+  });
+
+  // Stop the camera when the page is hidden, so we don't keep it on in background
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) stopCamera();
+  });
 
   // Info sheet toggle
   const toggle = $('info-toggle');
-  const sheet = $('info-sheet');
+  const sheet  = $('info-sheet');
   toggle.addEventListener('click', () => {
     const open = sheet.classList.toggle('open');
     toggle.setAttribute('aria-expanded', String(open));
