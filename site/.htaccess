@@ -5,8 +5,16 @@
 # Default to UTF-8 (so Lithuanian diacritics never break)
 AddDefaultCharset UTF-8
 
+# Serve our static index.html at /, beating any pre-existing WordPress
+# index.php that may share this directory on the Hostinger plan.
+DirectoryIndex index.html index.htm index.php
+
 # ── Clean URLs ──────────────────────────────────────────────────
 RewriteEngine On
+
+# Force / to serve /index.html even if WordPress's mod_rewrite is still
+# active alongside us. Must come before any catch-all rewrites.
+RewriteRule ^$ /index.html [L]
 
 # Allow /qr/7 to serve /qr/7.html (forgiving QR scanner behavior)
 RewriteCond %{REQUEST_FILENAME} !-f
