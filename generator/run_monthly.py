@@ -16,13 +16,13 @@ Pipeline:
 from __future__ import annotations
 
 import base64
-import concurrent.futures
 import json
 import logging
 import os
 import shutil
 import subprocess
 import sys
+import time
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
@@ -198,7 +198,9 @@ def generate_image(prompt: str, out_path: Path, openai_client: OpenAI) -> None:
 
 def generate_all_images(exhibition: Exhibition, images_dir: Path) -> None:
     images_dir.mkdir(parents=True, exist_ok=True)
-    client = OpenAI()
+    # max_retries=8 gives the SDK room to back off when we hit OpenAI's
+    # gpt-image-1 rate limit (5 images / minute on Tier 1).
+    client = OpenAI(max_retries=8)
 
     tasks: list[tuple[str, Path]] = []
     # Poster
@@ -211,11 +213,14 @@ def generate_all_images(exhibition: Exhibition, images_dir: Path) -> None:
         art.image_filename = path.name
         tasks.append((art.image_prompt, path))
 
-    # gpt-image-1 doesn't love 25 concurrent requests. 4 at a time is safe.
-    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:
-        futures = [ex.submit(generate_image, p, path, client) for p, path in tasks]
-        for f in concurrent.futures.as_completed(futures):
-            f.result()  # raise if any failed
+    # Tier-1 OpenAI accounts cap gpt-image-1 at 5 images/min. Run serially
+    # and pace ~13s between requests so we never exceed the limit. Each
+    # image generation itself takes 15–30s, so total is still ~8–12 min.
+    log.info("Generating %d images serially (Tier-1 rate-limit safe)", len(tasks))
+    for i, (prompt, path) in enumerate(tasks):
+        if i > 0:
+            time.sleep(13)  # 5 RPM = one every 12s, +1s margin
+        generate_image(prompt, path, client)
 
     log.info("All %d images generated", len(tasks))
 
