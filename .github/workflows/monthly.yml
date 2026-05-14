@@ -1,0 +1,84 @@
+name: Monthly Exhibition
+
+on:
+  schedule:
+    # 04:00 UTC on the 1st of every month (07:00 in Lithuania)
+    - cron: '0 4 1 * *'
+  workflow_dispatch:
+    inputs:
+      theme_hint:
+        description: 'Optional theme hint in Lithuanian (leave blank for AI choice)'
+        required: false
+        default: ''
+      skip_deploy:
+        description: 'Build only, do not upload to Hostinger'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  generate-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: 'generator/requirements.txt'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Python dependencies
+        run: pip install -r generator/requirements.txt
+
+      - name: Install MindAR compiler
+        run: npm install -g mind-ar@1.2.5
+
+      - name: Generate exhibition
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY:    ${{ secrets.OPENAI_API_KEY }}
+          THEME_HINT:        ${{ inputs.theme_hint }}
+        run: python -m generator.run_monthly
+
+      - name: Archive content (commit back to repo for history)
+        if: ${{ inputs.skip_deploy != true }}
+        run: |
+          git config user.name  "miskogalerija-bot"
+          git config user.email "bot@miskogalerija.lt"
+          git add content/ site/qr/ site/index.html site/manifest.json site/exhibitions/
+          git diff --cached --quiet || git commit -m "Exhibition: $(date -u +'%Y-%m')"
+          git push || echo "(push failed — non-fatal, deploy continues)"
+
+      - name: Deploy site to Hostinger via FTP
+        if: ${{ inputs.skip_deploy != true }}
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server:    ${{ secrets.HOSTINGER_FTP_HOST }}
+          username:  ${{ secrets.HOSTINGER_FTP_USER }}
+          password:  ${{ secrets.HOSTINGER_FTP_PASSWORD }}
+          local-dir: ./site/
+          server-dir: /public_html/
+          # If Hostinger gives you FTPS (TLS), uncomment:
+          # protocol: ftps
+          # port: 21
+          exclude: |
+            **/_templates/**
+            **/.DS_Store
+            **/.git*
+
+      - name: Upload artifacts (when skip_deploy is true)
+        if: ${{ inputs.skip_deploy == true }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: exhibition-build
+          path: |
+            content/
+            site/

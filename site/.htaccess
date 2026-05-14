@@ -1,0 +1,71 @@
+# ─────────────────────────────────────────────────────────────────
+# Miško Galerija — Apache configuration for Hostinger
+# ─────────────────────────────────────────────────────────────────
+
+# Default to UTF-8 (so Lithuanian diacritics never break)
+AddDefaultCharset UTF-8
+
+# ── Clean URLs ──────────────────────────────────────────────────
+RewriteEngine On
+
+# Allow /qr/7 to serve /qr/7.html (forgiving QR scanner behavior)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^qr/([0-9]+)/?$ /qr/$1.html [L]
+
+# Allow /zemelapis to serve /zemelapis.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^zemelapis/?$ /zemelapis.html [L]
+# Friendly alias /map -> /zemelapis.html
+RewriteRule ^map/?$ /zemelapis.html [L,R=301]
+
+# Force HTTPS (Hostinger provides free SSL)
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Force non-www -> www (or change to other direction; pick one)
+# RewriteCond %{HTTP_HOST} ^miskogalerija\.lt$ [NC]
+# RewriteRule ^(.*)$ https://www.miskogalerija.lt/$1 [L,R=301]
+
+# ── Caching ─────────────────────────────────────────────────────
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Per-month exhibition assets are immutable (path includes YYYY-MM)
+  <FilesMatch "\.(png|jpg|jpeg|webp|gif|mind)$">
+    ExpiresDefault "access plus 1 year"
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # CSS/JS — daily
+  <FilesMatch "\.(css|js)$">
+    ExpiresDefault "access plus 1 day"
+    Header set Cache-Control "public, max-age=86400"
+  </FilesMatch>
+
+  # HTML — short revalidation so monthly rotation appears quickly
+  <FilesMatch "\.(html|json)$">
+    ExpiresDefault "access plus 5 minutes"
+    Header set Cache-Control "public, max-age=300, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+# ── Compression ─────────────────────────────────────────────────
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+# ── Security headers ────────────────────────────────────────────
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(self), microphone=(), geolocation=()"
+</IfModule>
+
+# ── MIME types ──────────────────────────────────────────────────
+# MindAR target files (custom binary format)
+AddType application/octet-stream .mind
+
+# ── Errors ──────────────────────────────────────────────────────
+ErrorDocument 404 /index.html

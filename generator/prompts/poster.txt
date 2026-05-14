@@ -1,0 +1,16 @@
+Tema: {title}
+Potemė: {subtitle}
+Vizualinė kryptis: {visual_direction}
+Paletė: {palette_hint}
+
+Sukurk poster image prompt'ą gpt-image-1 modeliui. Plakatas yra parodos
+„veidas" — naudosime jį pagrindiniame puslapyje ir socialinėse medijose.
+
+Plakate NEGALI būti jokio teksto (tekstą uždėsime CSS).
+
+Atsakyk TIK JSON, be jokio papildomo teksto:
+
+{{
+  "image_prompt": "120–180 word English prompt for gpt-image-1 generating a powerful, single-image gallery poster. Square aspect ratio. Atmospheric, gallery-quality, no text, no typography, no logos. Should embody the theme without literal forest cliches.",
+  "social_caption_lt": "Trumpas Instagram/Facebook tekstas lietuviškai (max 60 žodžių), kuris kviečia žmones aplankyti parodą"
+}}

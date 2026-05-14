@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{% block title %}Miško Galerija{% endblock %}</title>
+  <meta name="description" content="{{ exhibition.theme.subtitle }}">
+  <meta property="og:title" content="Miško Galerija — {{ exhibition.theme.title }}">
+  <meta property="og:description" content="{{ exhibition.theme.subtitle }}">
+  <meta property="og:image" content="https://miskogalerija.lt{{ assets_base }}/images/{{ exhibition.poster_filename }}">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0d0c0a">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><circle cx='12' cy='12' r='10' fill='%230d0c0a'/></svg>">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  {% block head %}{% endblock %}
+</head>
+<body class="{% block body_class %}{% endblock %}">
+{% block body %}{% endblock %}
+</body>
+</html>

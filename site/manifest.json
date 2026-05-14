@@ -1,0 +1,207 @@
+{
+  "month": "2026-05",
+  "generated_at": "2026-05-02T00:39:23.447102+00:00",
+  "theme": {
+    "title": "Miško Sapnai",
+    "subtitle": "Dvidešimt keturios pavasario nakties vizijos, surinktos iš medžių pasąmonės.",
+    "essay": "Šio mėnesio paroda gimsta iš paprasto klausimo: jeigu medžiai sapnuotų, ką jie matytų? Kuratoriaus pasirinkimas — ne ekologinė tema ir ne tradicinė miško mitologija, bet tarpinė erdvė tarp sąmonės ir neorganinio buvimo, kurioje pavasario šaltis dar neatlęidžia, o saulės šviesa jau pasiekia paklotę.\n\nDvidešimt keturi menininkai — vieni išgalvoti, kiti realistiškai tikėtini — pateikia savo atsakymus. Vieni renkasi figūratyvinį kelią ir piešia pamatuotus fotografinius kadrus, kiti gilinasi į abstrakciją, kur formos virsta pajutimais. Kviečiame nepraeiti pro šalį. Sustokite. Pažiūrėkite per kameros lęšį.",
+    "visual_direction": "Muted earth-tone palette dominated by moss green, birch white, and pre-dawn blue. Mix of digital painting, photographic collage, and abstract gestures. Atmospheric, slightly melancholic, gallery-grade.",
+    "palette_hint": "moss green, birch white, pre-dawn blue, rust"
+  },
+  "poster": "/exhibitions/2026-05/images/poster.png",
+  "social_caption_lt": "Naujoji „Miško sapnų\" paroda — 24 vizijos, 24 QR kodai, vienas miškas. Lankyti dabar.",
+  "artworks": [
+    {
+      "id": 1,
+      "artist": "Tomas Petraitis",
+      "title_lt": "Pirmas šaltis",
+      "url": "https://miskogalerija.lt/qr/1.html",
+      "image": "/exhibitions/2026-05/images/01.png",
+      "target": null
+    },
+    {
+      "id": 2,
+      "artist": "Kęstutis Bružaitė",
+      "title_lt": "Žiemos paskutinis šnabždesys",
+      "url": "https://miskogalerija.lt/qr/2.html",
+      "image": "/exhibitions/2026-05/images/02.png",
+      "target": null
+    },
+    {
+      "id": 3,
+      "artist": "Tomas Burokas",
+      "title_lt": "Beržo balso forma",
+      "url": "https://miskogalerija.lt/qr/3.html",
+      "image": "/exhibitions/2026-05/images/03.png",
+      "target": null
+    },
+    {
+      "id": 4,
+      "artist": "Aušra Kazlauskas",
+      "title_lt": "Naktis tarp šakų",
+      "url": "https://miskogalerija.lt/qr/4.html",
+      "image": "/exhibitions/2026-05/images/04.png",
+      "target": null
+    },
+    {
+      "id": 5,
+      "artist": "Lena Kowalski",
+      "title_lt": "Sapno paklotė",
+      "url": "https://miskogalerija.lt/qr/5.html",
+      "image": "/exhibitions/2026-05/images/05.png",
+      "target": null
+    },
+    {
+      "id": 6,
+      "artist": "Kęstutis Vilkaitė",
+      "title_lt": "Drebulių chronika",
+      "url": "https://miskogalerija.lt/qr/6.html",
+      "image": "/exhibitions/2026-05/images/06.png",
+      "target": null
+    },
+    {
+      "id": 7,
+      "artist": "Vytautas Burokas",
+      "title_lt": "Atminties medis",
+      "url": "https://miskogalerija.lt/qr/7.html",
+      "image": "/exhibitions/2026-05/images/07.png",
+      "target": null
+    },
+    {
+      "id": 8,
+      "artist": "Eglė Gajauskas",
+      "title_lt": "Poryčio švytėjimas",
+      "url": "https://miskogalerija.lt/qr/8.html",
+      "image": "/exhibitions/2026-05/images/08.png",
+      "target": null
+    },
+    {
+      "id": 9,
+      "artist": "Eglė Mickevičius",
+      "title_lt": "Šaknų kalba",
+      "url": "https://miskogalerija.lt/qr/9.html",
+      "image": "/exhibitions/2026-05/images/09.png",
+      "target": null
+    },
+    {
+      "id": 10,
+      "artist": "Mira Jansson",
+      "title_lt": "Vandens stiklas",
+      "url": "https://miskogalerija.lt/qr/10.html",
+      "image": "/exhibitions/2026-05/images/10.png",
+      "target": null
+    },
+    {
+      "id": 11,
+      "artist": "Mantas Dambrauskaitė",
+      "title_lt": "Tylos archeologija",
+      "url": "https://miskogalerija.lt/qr/11.html",
+      "image": "/exhibitions/2026-05/images/11.png",
+      "target": null
+    },
+    {
+      "id": 12,
+      "artist": "Vytautas Vilkaitė",
+      "title_lt": "Pavasario kontūras",
+      "url": "https://miskogalerija.lt/qr/12.html",
+      "image": "/exhibitions/2026-05/images/12.png",
+      "target": null
+    },
+    {
+      "id": 13,
+      "artist": "Tomas Vilkaitė",
+      "title_lt": "Spygliuotos pieva",
+      "url": "https://miskogalerija.lt/qr/13.html",
+      "image": "/exhibitions/2026-05/images/13.png",
+      "target": null
+    },
+    {
+      "id": 14,
+      "artist": "Mantas Burokas",
+      "title_lt": "Septintas rytas",
+      "url": "https://miskogalerija.lt/qr/14.html",
+      "image": "/exhibitions/2026-05/images/14.png",
+      "target": null
+    },
+    {
+      "id": 15,
+      "artist": "Mira Jansson",
+      "title_lt": "Po žemei",
+      "url": "https://miskogalerija.lt/qr/15.html",
+      "image": "/exhibitions/2026-05/images/15.png",
+      "target": null
+    },
+    {
+      "id": 16,
+      "artist": "Tomas Mickevičius",
+      "title_lt": "Kvėpavimas tarpukaryje",
+      "url": "https://miskogalerija.lt/qr/16.html",
+      "image": "/exhibitions/2026-05/images/16.png",
+      "target": null
+    },
+    {
+      "id": 17,
+      "artist": "Rūta Žukauskas",
+      "title_lt": "Pelkės akys",
+      "url": "https://miskogalerija.lt/qr/17.html",
+      "image": "/exhibitions/2026-05/images/17.png",
+      "target": null
+    },
+    {
+      "id": 18,
+      "artist": "Mantas Dambrauskaitė",
+      "title_lt": "Dovana iš ąžuolo",
+      "url": "https://miskogalerija.lt/qr/18.html",
+      "image": "/exhibitions/2026-05/images/18.png",
+      "target": null
+    },
+    {
+      "id": 19,
+      "artist": "Tomas Burokas",
+      "title_lt": "Šerkšno raidynas",
+      "url": "https://miskogalerija.lt/qr/19.html",
+      "image": "/exhibitions/2026-05/images/19.png",
+      "target": null
+    },
+    {
+      "id": 20,
+      "artist": "Tomáš Hradil",
+      "title_lt": "Dūmas virš laukymės",
+      "url": "https://miskogalerija.lt/qr/20.html",
+      "image": "/exhibitions/2026-05/images/20.png",
+      "target": null
+    },
+    {
+      "id": 21,
+      "artist": "Vytautas Gajauskas",
+      "title_lt": "Vienatvės topografija",
+      "url": "https://miskogalerija.lt/qr/21.html",
+      "image": "/exhibitions/2026-05/images/21.png",
+      "target": null
+    },
+    {
+      "id": 22,
+      "artist": "Kęstutis Dambrauskaitė",
+      "title_lt": "Mažas mažas šaltis",
+      "url": "https://miskogalerija.lt/qr/22.html",
+      "image": "/exhibitions/2026-05/images/22.png",
+      "target": null
+    },
+    {
+      "id": 23,
+      "artist": "Aušra Dambrauskaitė",
+      "title_lt": "Kelionės pradžia",
+      "url": "https://miskogalerija.lt/qr/23.html",
+      "image": "/exhibitions/2026-05/images/23.png",
+      "target": null
+    },
+    {
+      "id": 24,
+      "artist": "Tomas Mickevičius",
+      "title_lt": "Galas ir ne galas",
+      "url": "https://miskogalerija.lt/qr/24.html",
+      "image": "/exhibitions/2026-05/images/24.png",
+      "target": null
+    }
+  ]
+}

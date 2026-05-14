@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Spygliuotos pieva — Tomas Vilkaitė — Miško Galerija</title>
+  <meta name="description" content="Dvidešimt keturios pavasario nakties vizijos, surinktos iš medžių pasąmonės.">
+  <meta property="og:title" content="Miško Galerija — Miško Sapnai">
+  <meta property="og:description" content="Dvidešimt keturios pavasario nakties vizijos, surinktos iš medžių pasąmonės.">
+  <meta property="og:image" content="https://miskogalerija.lt/exhibitions/2026-05/images/poster.png">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0d0c0a">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><circle cx='12' cy='12' r='10' fill='%230d0c0a'/></svg>">
+  <link rel="stylesheet" href="/assets/css/site.css">
+<script src="https://cdn.jsdelivr.net/npm/aframe@1.5.0/dist/aframe-master.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+</head>
+<body class="page-ar">
+
+<!-- Hidden image used as the AR plane texture -->
+<a-assets-preload>
+  <img id="art-img" src="/exhibitions/2026-05/images/13.png" crossorigin="anonymous">
+</a-assets-preload>
+
+
+<!-- UI overlay: launcher, instructions, fallback view, info sheet -->
+<div id="overlay" class="overlay">
+  <header class="ar-header">
+    <a href="/" class="ar-header__home" aria-label="Į pradžią">←</a>
+    <span class="ar-header__num">№ 13 / 24</span>
+  </header>
+
+  <!-- Launcher state: shown first, lets user opt into camera -->
+  <section id="launcher" class="launcher">
+    <figure class="launcher__art">
+      <img src="/exhibitions/2026-05/images/13.png" alt="Spygliuotos pieva">
+    </figure>
+    <div class="launcher__copy">
+      <p class="eyebrow">Miško Sapnai</p>
+      <h1>Spygliuotos pieva</h1>
+      <p class="byline">Tomas Vilkaitė, 2026 · Kolažas ir tekstūra</p>
+      <button id="start-static" class="btn-secondary">Žiūrėti be kameros</button>
+    </div>
+  </section>
+
+  <!-- Scanning hint shown during AR -->
+  <div id="scan-hint" class="scan-hint" hidden>
+    <div class="scan-hint__frame"></div>
+    <p>Nukreipk telefoną į QR plokštelę</p>
+    <button id="give-up" class="btn-text">Nepavyksta? Žiūrėti be kameros →</button>
+  </div>
+
+  <!-- Static fallback view -->
+  <section id="static-view" class="static-view" hidden>
+    <figure class="static-view__art">
+      <img src="/exhibitions/2026-05/images/13.png" alt="Spygliuotos pieva">
+    </figure>
+  </section>
+
+  <!-- Always-available info sheet (slides up) -->
+  <button id="info-toggle" class="info-toggle" aria-expanded="false">
+    <span class="info-toggle__label">Apie kūrinį</span>
+    <span class="info-toggle__chevron">↑</span>
+  </button>
+  <aside id="info-sheet" class="info-sheet" aria-hidden="true">
+    <div class="info-sheet__inner">
+      <p class="eyebrow">№ 13 · Gegužės 2026</p>
+      <h2>Spygliuotos pieva</h2>
+      <p class="byline">Tomas Vilkaitė · Kolažas ir tekstūra, 2026</p>
+      <div class="statement">
+        <p>Nuolat grįžtu prie idėjos, kad medžiai turi savo vidinę architektūrą — ne biologinę, bet semiotinę. Šis darbas yra schema medžiui, kurio dar nėra. Galbūt jis ateina.</p>
+      </div>
+      <hr>
+      <p class="eyebrow">Parodos kontekstas — Miško Sapnai</p>
+      <p class="theme-summary">Dvidešimt keturios pavasario nakties vizijos, surinktos iš medžių pasąmonės.</p>
+      <p class="info-sheet__links">
+        <a href="/zemelapis.html" class="link-back">Žemėlapis →</a>
+        <a href="/" class="link-back">Visa paroda →</a>
+      </p>
+    </div>
+  </aside>
+</div>
+
+<script>
+(function () {
+  'use strict';
+  const SCAN_TIMEOUT_MS = 8000;          // give up tracking after 8s
+  const hasARScene = false;
+
+  const $ = (id) => document.getElementById(id);
+  const launcher = $('launcher');
+  const scanHint = $('scan-hint');
+  const staticView = $('static-view');
+  const arScene = $('ar-scene');
+
+  function showStatic() {
+    if (arScene) arScene.style.display = 'none';
+    if (scanHint) scanHint.hidden = true;
+    launcher.hidden = true;
+    staticView.hidden = false;
+    document.body.classList.add('mode-static');
+  }
+
+  function showAR() {
+    if (!hasARScene || !arScene) { showStatic(); return; }
+    launcher.hidden = true;
+    scanHint.hidden = false;
+    document.body.classList.add('mode-ar');
+    const sys = arScene.systems['mindar-image-system'];
+    sys.start();
+
+    let found = false;
+    const targetEl = arScene.querySelector('[mindar-image-target]');
+    targetEl.addEventListener('targetFound', () => {
+      found = true;
+      scanHint.hidden = true;
+    });
+    targetEl.addEventListener('targetLost', () => {
+      // brief disappearance is fine; only re-show hint after 1.5s
+      setTimeout(() => {
+        if (!targetEl.object3D.visible && !staticView.hidden === false) {
+          scanHint.hidden = false;
+        }
+      }, 1500);
+    });
+
+    // Hard timeout: if no track in 8s, gracefully fall back
+    setTimeout(() => {
+      if (!found) showStatic();
+    }, SCAN_TIMEOUT_MS);
+  }
+
+  // Capability check: getUserMedia + decent device
+  const canDoAR = hasARScene
+    && navigator.mediaDevices
+    && typeof navigator.mediaDevices.getUserMedia === 'function';
+
+  if (!canDoAR) {
+    // Hide AR button if it's there
+    const btn = $('start-ar'); if (btn) btn.style.display = 'none';
+  }
+
+  $('start-ar')?.addEventListener('click', showAR);
+  $('start-static').addEventListener('click', showStatic);
+  $('give-up')?.addEventListener('click', showStatic);
+
+  // Info sheet toggle
+  const toggle = $('info-toggle');
+  const sheet = $('info-sheet');
+  toggle.addEventListener('click', () => {
+    const open = sheet.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(open));
+    sheet.setAttribute('aria-hidden', String(!open));
+  });
+})();
+</script>
+
+</body>
+</html>

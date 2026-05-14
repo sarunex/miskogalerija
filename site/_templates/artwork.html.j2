@@ -1,0 +1,178 @@
+{% extends "base.html.j2" %}
+{% block title %}{{ art.title_lt }} — {{ art.artist }} — Miško Galerija{% endblock %}
+{% block body_class %}page-ar{% endblock %}
+{% block head %}
+<script src="https://cdn.jsdelivr.net/npm/aframe@1.5.0/dist/aframe-master.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+{% endblock %}
+{% block body %}
+
+<!-- Hidden image used as the AR plane texture -->
+<a-assets-preload>
+  <img id="art-img" src="{{ assets_base }}/images/{{ art.image_filename }}" crossorigin="anonymous">
+</a-assets-preload>
+
+{% if art.target_filename %}
+<!-- AR scene: tries to track the marker; degrades automatically -->
+<a-scene
+  id="ar-scene"
+  mindar-image="imageTargetSrc: {{ assets_base }}/targets/{{ art.target_filename }}; autoStart: false; uiLoading: no; uiError: no; uiScanning: no;"
+  embedded
+  color-space="sRGB"
+  renderer="colorManagement: true; physicallyCorrectLights"
+  vr-mode-ui="enabled: false"
+  device-orientation-permission-ui="enabled: false">
+  <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+  <a-entity mindar-image-target="targetIndex: 0">
+    <a-plane
+      src="#art-img"
+      position="0 0 0"
+      height="1"
+      width="1"
+      rotation="0 0 0"
+      material="transparent: true; alphaTest: 0.01"></a-plane>
+  </a-entity>
+</a-scene>
+{% endif %}
+
+<!-- UI overlay: launcher, instructions, fallback view, info sheet -->
+<div id="overlay" class="overlay">
+  <header class="ar-header">
+    <a href="/" class="ar-header__home" aria-label="Į pradžią">←</a>
+    <span class="ar-header__num">№ {{ "%02d"|format(art.id) }} / 24</span>
+  </header>
+
+  <!-- Launcher state: shown first, lets user opt into camera -->
+  <section id="launcher" class="launcher">
+    <figure class="launcher__art">
+      <img src="{{ assets_base }}/images/{{ art.image_filename }}" alt="{{ art.title_lt }}">
+    </figure>
+    <div class="launcher__copy">
+      <p class="eyebrow">{{ exhibition.theme.title }}</p>
+      <h1>{{ art.title_lt }}</h1>
+      <p class="byline">{{ art.artist }}, {{ art.year }} · {{ art.medium_lt }}</p>
+      {% if art.target_filename %}
+      <button id="start-ar" class="btn-primary">
+        <span>Žiūrėti per kamerą</span>
+        <small>Nukreipk telefoną į QR plokštelę</small>
+      </button>
+      {% endif %}
+      <button id="start-static" class="btn-secondary">Žiūrėti be kameros</button>
+    </div>
+  </section>
+
+  <!-- Scanning hint shown during AR -->
+  <div id="scan-hint" class="scan-hint" hidden>
+    <div class="scan-hint__frame"></div>
+    <p>Nukreipk telefoną į QR plokštelę</p>
+    <button id="give-up" class="btn-text">Nepavyksta? Žiūrėti be kameros →</button>
+  </div>
+
+  <!-- Static fallback view -->
+  <section id="static-view" class="static-view" hidden>
+    <figure class="static-view__art">
+      <img src="{{ assets_base }}/images/{{ art.image_filename }}" alt="{{ art.title_lt }}">
+    </figure>
+  </section>
+
+  <!-- Always-available info sheet (slides up) -->
+  <button id="info-toggle" class="info-toggle" aria-expanded="false">
+    <span class="info-toggle__label">Apie kūrinį</span>
+    <span class="info-toggle__chevron">↑</span>
+  </button>
+  <aside id="info-sheet" class="info-sheet" aria-hidden="true">
+    <div class="info-sheet__inner">
+      <p class="eyebrow">№ {{ "%02d"|format(art.id) }} · {{ exhibition.month_lt|capitalize }} {{ exhibition.year }}</p>
+      <h2>{{ art.title_lt }}</h2>
+      <p class="byline">{{ art.artist }} · {{ art.medium_lt }}, {{ art.year }}</p>
+      <div class="statement">
+        {% for paragraph in art.statement_lt.split('\n\n') %}
+        <p>{{ paragraph }}</p>
+        {% endfor %}
+      </div>
+      <hr>
+      <p class="eyebrow">Parodos kontekstas — {{ exhibition.theme.title }}</p>
+      <p class="theme-summary">{{ exhibition.theme.subtitle }}</p>
+      <p class="info-sheet__links">
+        <a href="/zemelapis.html" class="link-back">Žemėlapis →</a>
+        <a href="/" class="link-back">Visa paroda →</a>
+      </p>
+    </div>
+  </aside>
+</div>
+
+<script>
+(function () {
+  'use strict';
+  const SCAN_TIMEOUT_MS = 8000;          // give up tracking after 8s
+  const hasARScene = {{ 'true' if art.target_filename else 'false' }};
+
+  const $ = (id) => document.getElementById(id);
+  const launcher = $('launcher');
+  const scanHint = $('scan-hint');
+  const staticView = $('static-view');
+  const arScene = $('ar-scene');
+
+  function showStatic() {
+    if (arScene) arScene.style.display = 'none';
+    if (scanHint) scanHint.hidden = true;
+    launcher.hidden = true;
+    staticView.hidden = false;
+    document.body.classList.add('mode-static');
+  }
+
+  function showAR() {
+    if (!hasARScene || !arScene) { showStatic(); return; }
+    launcher.hidden = true;
+    scanHint.hidden = false;
+    document.body.classList.add('mode-ar');
+    const sys = arScene.systems['mindar-image-system'];
+    sys.start();
+
+    let found = false;
+    const targetEl = arScene.querySelector('[mindar-image-target]');
+    targetEl.addEventListener('targetFound', () => {
+      found = true;
+      scanHint.hidden = true;
+    });
+    targetEl.addEventListener('targetLost', () => {
+      // brief disappearance is fine; only re-show hint after 1.5s
+      setTimeout(() => {
+        if (!targetEl.object3D.visible && !staticView.hidden === false) {
+          scanHint.hidden = false;
+        }
+      }, 1500);
+    });
+
+    // Hard timeout: if no track in 8s, gracefully fall back
+    setTimeout(() => {
+      if (!found) showStatic();
+    }, SCAN_TIMEOUT_MS);
+  }
+
+  // Capability check: getUserMedia + decent device
+  const canDoAR = hasARScene
+    && navigator.mediaDevices
+    && typeof navigator.mediaDevices.getUserMedia === 'function';
+
+  if (!canDoAR) {
+    // Hide AR button if it's there
+    const btn = $('start-ar'); if (btn) btn.style.display = 'none';
+  }
+
+  $('start-ar')?.addEventListener('click', showAR);
+  $('start-static').addEventListener('click', showStatic);
+  $('give-up')?.addEventListener('click', showStatic);
+
+  // Info sheet toggle
+  const toggle = $('info-toggle');
+  const sheet = $('info-sheet');
+  toggle.addEventListener('click', () => {
+    const open = sheet.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(open));
+    sheet.setAttribute('aria-hidden', String(!open));
+  });
+})();
+</script>
+
+{% endblock %}

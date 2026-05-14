@@ -1,0 +1,33 @@
+Tema: {title}
+Potemė: {subtitle}
+Vizualinė kryptis: {visual_direction}
+Paletė: {palette_hint}
+
+Sukurk 24 atskirus meno kūrinius šiai parodai. Kiekvienas kūrinys turi:
+- Savo unikalų požiūrio kampą į temą
+- Išgalvotą menininko vardą (lietuvišką ARBA tarptautinį, įvairink)
+- Lietuvišką pavadinimą
+- 60–90 žodžių menininko tekstą lietuviškai (pirmuoju asmeniu arba trečiuoju —
+  rašyk įvairiai, lyg tai būtų skirtingi menininkai)
+- Anglišką image generation prompt'ą gpt-image-1 modeliui
+
+Kūrinių žanrai turi varijuoti: tapyba, fotografija, kolažas, abstrakcija,
+figūratyvas, dokumentinis stilius, mitologinis, šiuolaikinis konceptualus.
+Bet visi turi laikytis bendros vizualinės krypties.
+
+Atsakyk TIK JSON masyvu, be jokio papildomo teksto, be markdown. Lygiai 24 elementai:
+
+[
+  {{
+    "id": 1,
+    "artist": "Menininko vardas",
+    "title_lt": "Lietuviškas pavadinimas",
+    "year": "{year}",
+    "medium_lt": "Technika lietuviškai (pvz. 'Skaitmeninė tapyba', 'Fotomontažas', 'Mišri technika')",
+    "statement_lt": "60–90 žodžių menininko tekstas lietuviškai...",
+    "image_prompt": "Detailed English prompt for gpt-image-1, 80–140 words, includes: subject, composition, lighting, color palette ({palette_hint}), medium/style, mood, aspect ratio guidance (square format)"
+  }},
+  ...
+]
+
+SVARBU: lygiai 24 elementai, id nuo 1 iki 24, JSON sintaksiškai teisingas.

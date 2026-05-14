@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Žemėlapis — Miško Galerija</title>
+  <meta name="description" content="Dvidešimt keturios pavasario nakties vizijos, surinktos iš medžių pasąmonės.">
+  <meta property="og:title" content="Miško Galerija — Miško Sapnai">
+  <meta property="og:description" content="Dvidešimt keturios pavasario nakties vizijos, surinktos iš medžių pasąmonės.">
+  <meta property="og:image" content="https://miskogalerija.lt/exhibitions/2026-05/images/poster.png">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0d0c0a">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><circle cx='12' cy='12' r='10' fill='%230d0c0a'/></svg>">
+  <link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="/assets/vendor/leaflet/leaflet.css">
+<script src="/assets/vendor/leaflet/leaflet.js" defer></script>
+</head>
+<body class="page-map">
+
+<header class="map-header">
+  <a href="/" class="map-header__home" aria-label="Į pradžią">←</a>
+  <div class="map-header__title">
+    <span class="map-header__eyebrow">Miško Galerija · Gegužės 2026</span>
+    <span class="map-header__theme">Miško Sapnai</span>
+  </div>
+  <button id="locate-me" class="map-header__locate" title="Mano vieta" aria-label="Rodyti mano vietą">⊙</button>
+</header>
+
+<main class="map-main">
+  <div id="map" class="map-canvas"></div>
+
+  <aside class="map-sidebar" id="sidebar">
+    <button class="map-sidebar__toggle" id="sidebar-toggle" aria-label="Rodyti sąrašą">
+      <span>Eksponatų sąrašas</span>
+      <span class="chev">▾</span>
+    </button>
+    <ol class="map-sidebar__list" id="sidebar-list">
+      <li class="map-sidebar__item" data-id="1">
+        <a href="/qr/1.html">
+          <span class="map-sidebar__num">01</span>
+          <span class="map-sidebar__copy">
+            <span class="map-sidebar__title">Pirmas šaltis</span>
+            <span class="map-sidebar__artist">Tomas Petraitis</span>
+          </span>
+          <span class="map-sidebar__thumb">
+            <img src="/exhibitions/2026-05/images/01.png" alt="" loading="lazy">
+          </span>
+        </a>
+      </li>
+      <li class="map-sidebar__item" data-id="2">
+        <a href="/qr/2.html">
+          <span class="map-sidebar__num">02</span>
+          <span class="map-sidebar__copy">
+            <span class="map-sidebar__title">Žiemos paskutinis šnabždesys</span>
+            <span class="map-sidebar__artist">Kęstutis Bružaitė</span>
+          </span>
+          <span class="map-sidebar__thumb">
+            <img src="/exhibitions/2026-05/images/02.png" alt="" loading="lazy">
+          </span>
+        </a>
+      </li>
+      <li class="map-sidebar__item" data-id="3">
+        <a href="/qr/3.html">
+          <span class="map-sidebar__num">03</span>
+          <span class="map-sidebar__copy">
+            <span class="map-sidebar__title">Beržo balso forma</span>
+            <span class="map-sidebar__artist">Tomas Burokas</span>
+          </span>
+          <span class="map-sidebar__thumb">
+            <img src="/exhibitions/2026-05/images/03.png" alt="" loading="lazy">
+          </span>
+        </a>
+      </li>
+      <li class="map-sidebar__item" data-id="4">
+        <a href="/qr/4.html">
+          <span class="map-sidebar__num">04</span>
+          <span class="map-sidebar__copy">
+            <span class="map-sidebar__title">Naktis tarp šakų</span>
+            <span class="map-sidebar__artist">Aušra Kazlauskas</span>
+          </span>
+          <span class="map-sidebar__thumb">
+            <img src="/exhibitions/2026-05/images/04.png" alt="" loading="lazy">
+          </span>
+        </a>
+      </li>
+      <li class="map-sidebar__item" data-id="5">
+        <a href="/qr/5.html">
+          <span class="map-sidebar__num">05</span>
+          <span class="map-sidebar__copy">
+            <span class="map-sidebar__title">Sapno paklotė</span>
+            <span class="map-sidebar__artist">Lena Kowalski</span>
+          </span>
+          <span class="map-sidebar__thumb">
+            <img src="/exhibitions/2026-05/images/05.png" alt="" loading="lazy">
+          </span>
+        </a>
+      </li>
+      <li class="map-sidebar__item" data-id="6">
+        <a href="/qr/6.html">
+          <span class="map-sidebar__num">06</span>
+          <span class="map-sidebar__copy">
+            <span class="map-sidebar__title">Drebulių chronika</span>
+            <span class="map-sidebar__artist">Kęstutis Vilkaitė</span>
+          </span>
+          <span class="map-sidebar__thumb">
+            <img src="/exhibitions/2026-05/images/06.png" alt="" loading="lazy">
+          </span>
+        </a>
+      </li>
+      <li class="map-sidebar__item" data-id="7">
+        <a href="/qr/7.html">
+          <span class="map-sidebar__num">07</span>
+          <span class="map-sidebar__copy">
+            <span class="map-sidebar__title">Atminties medis</span>
+            <span class="map-sidebar__artist">Vytautas Burokas</span>
+          </span>
+          <span class="map-sidebar__thumb">
+            <img src="/exhibitions/2026-05/images/07.png" alt="" loading="lazy">
+          </span>
+        </a>
+      </li>
+      <li class="map-sidebar__item" data-id="8">
+        <a href="/qr/8.html">
+          <span class="map-sidebar__num">08</span>
+          <span class="map-sidebar__copy">
+            <span class="map-sidebar__title">Poryčio švytėjimas</span>
+            <span class="map-sidebar__artist">Eglė Gajauskas</span>
+          </span>
+          <span class="map-sidebar__thumb">
+            <img src="/exhibitions/2026-05/images/08.png" alt="" loading="lazy">
+          </span>
+        </a>
+      </li>
+      <li class="map-sidebar__item" data-id="9">
+        <a href="/qr/9.html">
+          <span class="map-sidebar__num">09</span>
+          <span class="map-sidebar__copy">
+            <span class="map-sidebar__title">Šaknų kalba</span>
+            <span class="map-sidebar__artist">Eglė Mickevičius</span>
+          </span>
+          <span class="map-sidebar__thumb">
+            <img src="/exhibitions/2026-05/images/09.png" alt="" loading="lazy">
+          </span>
+        </a>
+      </li>
+      <li class="map-sidebar__item" data-id="10">
+        <a href="/qr/10.html">
+          <span class="map-sidebar__num">10</span>
+          <span class="map-sidebar__copy">
+            <span class="map-sidebar__title">Vandens stiklas</span>
+            <span class="map-sidebar__artist">Mira Jansson</span>
+          </span>
+          <span class="map-sidebar__thumb">
+            <img src="/exhibitions/2026-05/images/10.png" alt="" loading="lazy">
+          </span>
+        </a>
+      </li>
+      <li class="map-sidebar__item" data-id="11">
+        <a href="/qr/11.html">
+          <span class="map-sidebar__num">11</span>
+          <span class="map-sidebar__copy">
+            <span class="map-sidebar__title">Tylos archeologija</span>
+            <span class="map-sidebar__artist">Mantas Dambrauskaitė</span>
+          </span>
+          <span class="map-sidebar__thumb">
+            <img src="/exhibitions/2026-05/images/11.png" alt="" loading="lazy">
+          </span>
+        </a>
+      </li>
+      <li class="map-sidebar__item" data-id="12">
+        <a href="/qr/12.html">
+          <span class="map-sidebar__num">12</span>
+          <span class="map-sidebar__copy">
+            <span class="map-sidebar__title">Pavasario kontūras</span>
+            <span class="map-sidebar__artist">Vytautas Vilkaitė</span>
+          </span>
+          <span class="map-sidebar__thumb">
+            <img src="/exhibitions/2026-05/images/12.png" alt="" loading="lazy">
+          </span>
+        </a>
+      </li>
+      <li class="map-sidebar__item" data-id="13">
+        <a href="/qr/13.html">
+          <span class="map-sidebar__num">13</span>
+          <span class="map-sidebar__copy">
+            <span class="map-sidebar__title">Spygliuotos pieva</span>
+            <span class="map-sidebar__artist">Tomas Vilkaitė</span>
+          </span>
+          <span class="map-sidebar__thumb">
+            <img src="/exhibitions/2026-05/images/13.png" alt="" loading="lazy">
+          </span>
+        </a>
+      </li>
+      <li class="map-sidebar__item" data-id="14">
+        <a href="/qr/14.html">
+          <span class="map-sidebar__num">14</span>
+          <span class="map-sidebar__copy">
+            <span class="map-sidebar__title">Septintas rytas</span>
+            <span class="map-sidebar__artist">Mantas Burokas</span>
+          </span>
+          <span class="map-sidebar__thumb">
+            <img src="/exhibitions/2026-05/images/14.png" alt="" loading="lazy">
+          </span>
+        </a>
+      </li>
+      <li class="map-sidebar__item" data-id="15">
+        <a href="/qr/15.html">
+          <span class="map-sidebar__num">15</span>
+          <span class="map-sidebar__copy">
+            <span class="map-sidebar__title">Po žemei</span>
+            <span class="map-sidebar__artist">Mira Jansson</span>
+          </span>
+          <span class="map-sidebar__thumb">
+            <img src="/exhibitions/2026-05/images/15.png" alt="" loading="lazy">
+          </span>
+        </a>
+      </li>
+      <li class="map-sidebar__item" data-id="16">
+        <a href="/qr/16.html">
+          <span class="map-sidebar__num">16</span>
+          <span class="map-sidebar__copy">
+            <span class="map-sidebar__title">Kvėpavimas tarpukaryje</span>
+            <span class="map-sidebar__artist">Tomas Mickevičius</span>
+          </span>
+          <span class="map-sidebar__thumb">
+            <img src="/exhibitions/2026-05/images/16.png" alt="" loading="lazy">
+          </span>
+        </a>
+      </li>
+      <li class="map-sidebar__item" data-id="17">
+        <a href="/qr/17.html">
+          <span class="map-sidebar__num">17</span>
+          <span class="map-sidebar__copy">
+            <span class="map-sidebar__title">Pelkės akys</span>
+            <span class="map-sidebar__artist">Rūta Žukauskas</span>
+          </span>
+          <span class="map-sidebar__thumb">
+            <img src="/exhibitions/2026-05/images/17.png" alt="" loading="lazy">
+          </span>
+        </a>
+      </li>
+      <li class="map-sidebar__item" data-id="18">
+        <a href="/qr/18.html">
+          <span class="map-sidebar__num">18</span>
+          <span class="map-sidebar__copy">
+            <span class="map-sidebar__title">Dovana iš ąžuolo</span>
+            <span class="map-sidebar__artist">Mantas Dambrauskaitė</span>
+          </span>
+          <span class="map-sidebar__thumb">
+            <img src="/exhibitions/2026-05/images/18.png" alt="" loading="lazy">
+          </span>
+        </a>
+      </li>
+      <li class="map-sidebar__item" data-id="19">
+        <a href="/qr/19.html">
+          <span class="map-sidebar__num">19</span>
+          <span class="map-sidebar__copy">
+            <span class="map-sidebar__title">Šerkšno raidynas</span>
+            <span class="map-sidebar__artist">Tomas Burokas</span>
+          </span>
+          <span class="map-sidebar__thumb">
+            <img src="/exhibitions/2026-05/images/19.png" alt="" loading="lazy">
+          </span>
+        </a>
+      </li>
+      <li class="map-sidebar__item" data-id="20">
+        <a href="/qr/20.html">
+          <span class="map-sidebar__num">20</span>
+          <span class="map-sidebar__copy">
+            <span class="map-sidebar__title">Dūmas virš laukymės</span>
+            <span class="map-sidebar__artist">Tomáš Hradil</span>
+          </span>
+          <span class="map-sidebar__thumb">
+            <img src="/exhibitions/2026-05/images/20.png" alt="" loading="lazy">
+          </span>
+        </a>
+      </li>
+      <li class="map-sidebar__item" data-id="21">
+        <a href="/qr/21.html">
+          <span class="map-sidebar__num">21</span>
+          <span class="map-sidebar__copy">
+            <span class="map-sidebar__title">Vienatvės topografija</span>
+            <span class="map-sidebar__artist">Vytautas Gajauskas</span>
+          </span>
+          <span class="map-sidebar__thumb">
+            <img src="/exhibitions/2026-05/images/21.png" alt="" loading="lazy">
+          </span>
+        </a>
+      </li>
+      <li class="map-sidebar__item" data-id="22">
+        <a href="/qr/22.html">
+          <span class="map-sidebar__num">22</span>
+          <span class="map-sidebar__copy">
+            <span class="map-sidebar__title">Mažas mažas šaltis</span>
+            <span class="map-sidebar__artist">Kęstutis Dambrauskaitė</span>
+          </span>
+          <span class="map-sidebar__thumb">
+            <img src="/exhibitions/2026-05/images/22.png" alt="" loading="lazy">
+          </span>
+        </a>
+      </li>
+      <li class="map-sidebar__item" data-id="23">
+        <a href="/qr/23.html">
+          <span class="map-sidebar__num">23</span>
+          <span class="map-sidebar__copy">
+            <span class="map-sidebar__title">Kelionės pradžia</span>
+            <span class="map-sidebar__artist">Aušra Dambrauskaitė</span>
+          </span>
+          <span class="map-sidebar__thumb">
+            <img src="/exhibitions/2026-05/images/23.png" alt="" loading="lazy">
+          </span>
+        </a>
+      </li>
+      <li class="map-sidebar__item" data-id="24">
+        <a href="/qr/24.html">
+          <span class="map-sidebar__num">24</span>
+          <span class="map-sidebar__copy">
+            <span class="map-sidebar__title">Galas ir ne galas</span>
+            <span class="map-sidebar__artist">Tomas Mickevičius</span>
+          </span>
+          <span class="map-sidebar__thumb">
+            <img src="/exhibitions/2026-05/images/24.png" alt="" loading="lazy">
+          </span>
+        </a>
+      </li>
+    </ol>
+  </aside>
+</main>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+(async function () {
+  'use strict';
+
+  // ── Load locations + manifest in parallel ──
+  const [locRes, manifestRes] = await Promise.all([
+    fetch('/locations.json').then(r => r.json()),
+    fetch('/manifest.json').then(r => r.json()),
+  ]);
+
+  // Build a quick lookup: id → artwork
+  const artById = {};
+  manifestRes.artworks.forEach(a => { artById[a.id] = a; });
+
+  // ── Init map ──
+  const center = [locRes._center.lat, locRes._center.lng];
+  const zoom   = locRes._center.zoom || 16;
+  const map = L.map('map', {
+    center, zoom,
+    zoomControl: false,
+    attributionControl: true,
+  });
+  L.control.zoom({ position: 'bottomright' }).addTo(map);
+
+  // OpenStreetMap base layer — solid, free, no API key
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+
+  // ── Optional trail ──
+  if (locRes._trail && locRes._trail.points && locRes._trail.points.length > 1) {
+    L.polyline(locRes._trail.points, {
+      color: '#7a3a1a',
+      weight: 3,
+      opacity: 0.8,
+      dashArray: '6 8',
+    }).addTo(map);
+  }
+
+  // ── Custom plate marker (numbered, brand-styled) ──
+  function makeIcon(num) {
+    return L.divIcon({
+      className: 'plate-marker',
+      html: `<div class="plate-marker__pin"><span>${num}</span></div>`,
+      iconSize: [36, 44],
+      iconAnchor: [18, 44],
+      popupAnchor: [0, -42],
+    });
+  }
+
+  // ── Place markers ──
+  const bounds = [];
+  const markersById = {};
+  locRes.plates.forEach(p => {
+    const art = artById[p.id];
+    if (!art) return;
+    const m = L.marker([p.lat, p.lng], { icon: makeIcon(p.id) }).addTo(map);
+    const popup = `
+      <div class="plate-popup">
+        <div class="plate-popup__thumb">
+          <img src="${art.image}" alt="${escape(art.title_lt)}" loading="lazy">
+        </div>
+        <div class="plate-popup__num">№ ${String(p.id).padStart(2, '0')}</div>
+        <div class="plate-popup__title">${escape(art.title_lt)}</div>
+        <div class="plate-popup__artist">${escape(art.artist)}</div>
+        ${p.name_lt ? `<div class="plate-popup__loc">${escape(p.name_lt)}</div>` : ''}
+        <a class="plate-popup__btn" href="${art.url.replace('https://miskogalerija.lt','')}">Žiūrėti kūrinį →</a>
+      </div>
+    `;
+    m.bindPopup(popup, { maxWidth: 280, className: 'plate-popup-wrap' });
+    markersById[p.id] = m;
+    bounds.push([p.lat, p.lng]);
+  });
+
+  if (bounds.length) {
+    map.fitBounds(bounds, { padding: [60, 60], maxZoom: 17 });
+  }
+
+  // ── Sidebar interactions ──
+  document.querySelectorAll('.map-sidebar__item').forEach(li => {
+    const id = parseInt(li.dataset.id, 10);
+    li.addEventListener('mouseenter', () => {
+      const m = markersById[id];
+      if (m) m._icon?.classList.add('is-hover');
+    });
+    li.addEventListener('mouseleave', () => {
+      const m = markersById[id];
+      if (m) m._icon?.classList.remove('is-hover');
+    });
+    li.addEventListener('click', (e) => {
+      // If the click was on the link itself, let it navigate.
+      if (e.target.tagName === 'A' || e.target.closest('a')) {
+        // On mobile, intercept first click to focus marker; second click navigates.
+        if (window.innerWidth < 720 && !li.classList.contains('is-focused')) {
+          e.preventDefault();
+          li.classList.add('is-focused');
+          setTimeout(() => li.classList.remove('is-focused'), 2500);
+        }
+      }
+      const m = markersById[id];
+      if (m) {
+        map.flyTo([m.getLatLng().lat, m.getLatLng().lng], 17, { duration: 0.6 });
+        m.openPopup();
+      }
+    });
+  });
+
+  // Sidebar collapse on mobile
+  const toggle = document.getElementById('sidebar-toggle');
+  const sidebar = document.getElementById('sidebar');
+  toggle.addEventListener('click', () => sidebar.classList.toggle('is-open'));
+
+  // ── Locate me button ──
+  const locateBtn = document.getElementById('locate-me');
+  let userMarker = null;
+  locateBtn.addEventListener('click', () => {
+    if (!navigator.geolocation) { alert('Naršyklė nepalaiko vietos nustatymo.'); return; }
+    locateBtn.classList.add('is-loading');
+    navigator.geolocation.getCurrentPosition(
+      pos => {
+        const { latitude, longitude, accuracy } = pos.coords;
+        if (userMarker) userMarker.remove();
+        userMarker = L.circleMarker([latitude, longitude], {
+          radius: 8, color: '#2a3b1f', fillColor: '#2a3b1f', fillOpacity: 0.9, weight: 3,
+        }).addTo(map);
+        L.circle([latitude, longitude], {
+          radius: accuracy, color: '#2a3b1f', fillOpacity: 0.08, weight: 1,
+        }).addTo(map);
+        map.flyTo([latitude, longitude], 17, { duration: 0.8 });
+        locateBtn.classList.remove('is-loading');
+      },
+      err => {
+        locateBtn.classList.remove('is-loading');
+        alert('Nepavyko nustatyti vietos. Patikrink leidimus naršyklėje.');
+      },
+      { enableHighAccuracy: true, timeout: 10000 }
+    );
+  });
+
+  function escape(s) {
+    return String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
+  }
+})();
+});
+</script>
+
+</body>
+</html>

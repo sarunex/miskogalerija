@@ -1,0 +1,194 @@
+{% extends "base.html.j2" %}
+{% block title %}Žemėlapis — Miško Galerija{% endblock %}
+{% block body_class %}page-map{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="/assets/vendor/leaflet/leaflet.css">
+<script src="/assets/vendor/leaflet/leaflet.js" defer></script>
+{% endblock %}
+{% block body %}
+
+<header class="map-header">
+  <a href="/" class="map-header__home" aria-label="Į pradžią">←</a>
+  <div class="map-header__title">
+    <span class="map-header__eyebrow">Miško Galerija · {{ exhibition.month_lt|capitalize }} {{ exhibition.year }}</span>
+    <span class="map-header__theme">{{ exhibition.theme.title }}</span>
+  </div>
+  <button id="locate-me" class="map-header__locate" title="Mano vieta" aria-label="Rodyti mano vietą">⊙</button>
+</header>
+
+<main class="map-main">
+  <div id="map" class="map-canvas"></div>
+
+  <aside class="map-sidebar" id="sidebar">
+    <button class="map-sidebar__toggle" id="sidebar-toggle" aria-label="Rodyti sąrašą">
+      <span>Eksponatų sąrašas</span>
+      <span class="chev">▾</span>
+    </button>
+    <ol class="map-sidebar__list" id="sidebar-list">
+      {% for art in exhibition.artworks %}
+      <li class="map-sidebar__item" data-id="{{ art.id }}">
+        <a href="/qr/{{ art.id }}.html">
+          <span class="map-sidebar__num">{{ "%02d"|format(art.id) }}</span>
+          <span class="map-sidebar__copy">
+            <span class="map-sidebar__title">{{ art.title_lt }}</span>
+            <span class="map-sidebar__artist">{{ art.artist }}</span>
+          </span>
+          <span class="map-sidebar__thumb">
+            <img src="{{ assets_base }}/images/{{ art.image_filename }}" alt="" loading="lazy">
+          </span>
+        </a>
+      </li>
+      {% endfor %}
+    </ol>
+  </aside>
+</main>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+(async function () {
+  'use strict';
+
+  // ── Load locations + manifest in parallel ──
+  const [locRes, manifestRes] = await Promise.all([
+    fetch('/locations.json').then(r => r.json()),
+    fetch('/manifest.json').then(r => r.json()),
+  ]);
+
+  // Build a quick lookup: id → artwork
+  const artById = {};
+  manifestRes.artworks.forEach(a => { artById[a.id] = a; });
+
+  // ── Init map ──
+  const center = [locRes._center.lat, locRes._center.lng];
+  const zoom   = locRes._center.zoom || 16;
+  const map = L.map('map', {
+    center, zoom,
+    zoomControl: false,
+    attributionControl: true,
+  });
+  L.control.zoom({ position: 'bottomright' }).addTo(map);
+
+  // OpenStreetMap base layer — solid, free, no API key
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+
+  // ── Optional trail ──
+  if (locRes._trail && locRes._trail.points && locRes._trail.points.length > 1) {
+    L.polyline(locRes._trail.points, {
+      color: '#7a3a1a',
+      weight: 3,
+      opacity: 0.8,
+      dashArray: '6 8',
+    }).addTo(map);
+  }
+
+  // ── Custom plate marker (numbered, brand-styled) ──
+  function makeIcon(num) {
+    return L.divIcon({
+      className: 'plate-marker',
+      html: `<div class="plate-marker__pin"><span>${num}</span></div>`,
+      iconSize: [36, 44],
+      iconAnchor: [18, 44],
+      popupAnchor: [0, -42],
+    });
+  }
+
+  // ── Place markers ──
+  const bounds = [];
+  const markersById = {};
+  locRes.plates.forEach(p => {
+    const art = artById[p.id];
+    if (!art) return;
+    const m = L.marker([p.lat, p.lng], { icon: makeIcon(p.id) }).addTo(map);
+    const popup = `
+      <div class="plate-popup">
+        <div class="plate-popup__thumb">
+          <img src="${art.image}" alt="${escape(art.title_lt)}" loading="lazy">
+        </div>
+        <div class="plate-popup__num">№ ${String(p.id).padStart(2, '0')}</div>
+        <div class="plate-popup__title">${escape(art.title_lt)}</div>
+        <div class="plate-popup__artist">${escape(art.artist)}</div>
+        ${p.name_lt ? `<div class="plate-popup__loc">${escape(p.name_lt)}</div>` : ''}
+        <a class="plate-popup__btn" href="${art.url.replace('https://miskogalerija.lt','')}">Žiūrėti kūrinį →</a>
+      </div>
+    `;
+    m.bindPopup(popup, { maxWidth: 280, className: 'plate-popup-wrap' });
+    markersById[p.id] = m;
+    bounds.push([p.lat, p.lng]);
+  });
+
+  if (bounds.length) {
+    map.fitBounds(bounds, { padding: [60, 60], maxZoom: 17 });
+  }
+
+  // ── Sidebar interactions ──
+  document.querySelectorAll('.map-sidebar__item').forEach(li => {
+    const id = parseInt(li.dataset.id, 10);
+    li.addEventListener('mouseenter', () => {
+      const m = markersById[id];
+      if (m) m._icon?.classList.add('is-hover');
+    });
+    li.addEventListener('mouseleave', () => {
+      const m = markersById[id];
+      if (m) m._icon?.classList.remove('is-hover');
+    });
+    li.addEventListener('click', (e) => {
+      // If the click was on the link itself, let it navigate.
+      if (e.target.tagName === 'A' || e.target.closest('a')) {
+        // On mobile, intercept first click to focus marker; second click navigates.
+        if (window.innerWidth < 720 && !li.classList.contains('is-focused')) {
+          e.preventDefault();
+          li.classList.add('is-focused');
+          setTimeout(() => li.classList.remove('is-focused'), 2500);
+        }
+      }
+      const m = markersById[id];
+      if (m) {
+        map.flyTo([m.getLatLng().lat, m.getLatLng().lng], 17, { duration: 0.6 });
+        m.openPopup();
+      }
+    });
+  });
+
+  // Sidebar collapse on mobile
+  const toggle = document.getElementById('sidebar-toggle');
+  const sidebar = document.getElementById('sidebar');
+  toggle.addEventListener('click', () => sidebar.classList.toggle('is-open'));
+
+  // ── Locate me button ──
+  const locateBtn = document.getElementById('locate-me');
+  let userMarker = null;
+  locateBtn.addEventListener('click', () => {
+    if (!navigator.geolocation) { alert('Naršyklė nepalaiko vietos nustatymo.'); return; }
+    locateBtn.classList.add('is-loading');
+    navigator.geolocation.getCurrentPosition(
+      pos => {
+        const { latitude, longitude, accuracy } = pos.coords;
+        if (userMarker) userMarker.remove();
+        userMarker = L.circleMarker([latitude, longitude], {
+          radius: 8, color: '#2a3b1f', fillColor: '#2a3b1f', fillOpacity: 0.9, weight: 3,
+        }).addTo(map);
+        L.circle([latitude, longitude], {
+          radius: accuracy, color: '#2a3b1f', fillOpacity: 0.08, weight: 1,
+        }).addTo(map);
+        map.flyTo([latitude, longitude], 17, { duration: 0.8 });
+        locateBtn.classList.remove('is-loading');
+      },
+      err => {
+        locateBtn.classList.remove('is-loading');
+        alert('Nepavyko nustatyti vietos. Patikrink leidimus naršyklėje.');
+      },
+      { enableHighAccuracy: true, timeout: 10000 }
+    );
+  });
+
+  function escape(s) {
+    return String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
+  }
+})();
+});
+</script>
+
+{% endblock %}

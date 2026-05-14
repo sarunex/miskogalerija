@@ -1,0 +1,56 @@
+{% extends "base.html.j2" %}
+{% block title %}{{ exhibition.theme.title }} — Miško Galerija{% endblock %}
+{% block body_class %}page-index{% endblock %}
+{% block body %}
+
+<header class="masthead">
+  <div class="masthead__line">Miško Galerija &nbsp;·&nbsp; {{ exhibition.month_lt|capitalize }} {{ exhibition.year }}</div>
+  <a href="/zemelapis.html" class="masthead__map-link">Žemėlapis →</a>
+</header>
+
+<section class="hero">
+  <figure class="hero__poster">
+    <img src="{{ assets_base }}/images/{{ exhibition.poster_filename }}" alt="{{ exhibition.theme.title }}" loading="eager">
+  </figure>
+  <div class="hero__copy">
+    <p class="eyebrow">№&nbsp;{{ exhibition.month_key }}</p>
+    <h1 class="display">{{ exhibition.theme.title }}</h1>
+    <p class="subtitle">{{ exhibition.theme.subtitle }}</p>
+  </div>
+</section>
+
+<section class="essay">
+  <p class="essay__label">Kuratoriaus tekstas</p>
+  <div class="essay__body">
+    {% for paragraph in exhibition.theme.essay.split('\n\n') %}
+    <p>{{ paragraph }}</p>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="grid">
+  <h2 class="section__title">Eksponatai</h2>
+  <ol class="grid__list">
+    {% for art in exhibition.artworks %}
+    <li class="grid__item">
+      <a href="/qr/{{ art.id }}.html">
+        <figure>
+          <img src="{{ assets_base }}/images/{{ art.image_filename }}" alt="{{ art.title_lt }}" loading="lazy">
+        </figure>
+        <div class="grid__meta">
+          <span class="grid__num">{{ "%02d"|format(art.id) }}</span>
+          <span class="grid__title">{{ art.title_lt }}</span>
+          <span class="grid__artist">{{ art.artist }}</span>
+        </div>
+      </a>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<footer class="footer">
+  <p>Paroda kasmėnesinė. Kūriniai sugeneruoti dirbtinio intelekto, sukuruoti algoritmo. Lankykite mišką.</p>
+  <p class="footer__sig">miskogalerija.lt — autonomous gallery</p>
+</footer>
+
+{% endblock %}

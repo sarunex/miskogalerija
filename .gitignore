@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.env
+.env.local
+.venv/
+node_modules/
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Don't commit dry-run local outputs
+content/_dryrun/
