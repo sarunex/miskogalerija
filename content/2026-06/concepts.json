@@ -1,0 +1,277 @@
+{
+  "theme": {
+    "title": "Kur dingsta giesmė",
+    "subtitle": "Paroda apie paskutines akimirkas prieš tylą — nykstančių Lietuvos paukščių balsus ir jų tuštėjančias teritorijas.",
+    "essay": "Birželis Lietuvos miške yra garso mėnuo. Paukščiai gieda intensyviausiai — ginasi, vilioja, skelbia. Tačiau kas dešimtmetį šis choras plonėja. Meldinė nendrinukė, kurapka, griežlė — jų balsai traukiasi iš mūsų akustinės atminties tyliau nei bet koks istorinis įvykis. Ši paroda nekelia aliarmo ir nemoralizuoja. Ji tiesiog klausia: ką reiškia girdėti balsą, kuris netrukus gali tapti archyvu? Dvidešimt keturi kūriniai išdėstyti pagal garso nykimo logiką — nuo pilno, sodraus buvimo iki fragmentų, aidų ir galiausiai tylos. Kiekvienas kūrinys susijęs su konkrečia Lietuvos paukščių rūšimi, kurios populiacija mažėja arba jau išnykusi šalyje. Vizualiai tai nėra paukščių portretai. Tai struktūros, kurias palieka garsas: virpesių pėdsakai ore, tuščios teritorijos žemėlapiai, akustinės šešėlių formos. Lankytojas miške girdi tikrus paukščius ir mato tai, ko galbūt greitai nebegirdės. Augmented reality čia veikia kaip laiko membrana — ne prideda fantazijos, o parodo trūkumą, kuris dar nematomas, bet jau vyksta. Mes nekuriame elegijos. Mes kuriame dokumentą apie perėjimą iš buvimo į nebuvimą. Birželio miškas yra geriausia vieta tai patirti — čia giesmė dar skamba, bet jos kontūrai jau pradeda irti.",
+    "visual_direction": "Translucent, smoke-like forms suggesting sound waves frozen mid-dissipation. Soft focus organic shapes that feel like acoustic shadows or thermal imprints left by absent bodies. Visual language between scientific sonogram and abstract expressionism — no literal bird depictions. Layered, ethereal, with subtle decay at edges.",
+    "palette_hint": "bone white, ash grey, faded moss green, muted amber, deep charcoal"
+  },
+  "artworks": [
+    {
+      "id": 1,
+      "title_lt": "Paskutinis kvėpavimas virš pelkės",
+      "year": "2026",
+      "medium_lt": "Skaitmeninė tapyba",
+      "statement_lt": "Kūrinyje fiksuojama akimirka, kai griežlės balsas sklinda virš rytinės pelkės — garso banga, sustingusi tarp išnykimo ir buvimo. Translucentiški dūmų pavidalo vingiai kyla iš pelkės samanos, formuodami beveik negirdimą melodiją. Kompozicijoje dominuoja horizontalios linijos, primenančios sonogramos dažnių juostas. Spalvinė gama — išblukęs samanos žalumas ir pelenų pilkuma — perteikia trapią terpę, kurioje garsas dar virpa, bet netrukus išsisklaidys visiškoje tyloje.",
+      "image_prompt": "Abstract translucent smoke-like sound waves rising from horizontal wetland horizon, frozen mid-dissipation above moss surface. Soft focus organic shapes suggesting acoustic shadows of a bird call. Layered ethereal composition with subtle decay at edges. Scientific sonogram meets abstract expressionism aesthetic. Color palette: bone white wisps, ash grey atmospheric layers, faded moss green base, muted amber highlights, deep charcoal shadows. No literal bird depiction. Square format, contemplative mood, morning light diffusion.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 2,
+      "title_lt": "Tuščias lizdas, pilnas aidų",
+      "year": "2026",
+      "medium_lt": "Fotomontažas",
+      "statement_lt": "Fotografinis montažas dokumentuoja tuščią lizdo struktūrą kaip akustinę atmintį. Vietoj paukščio kūno matome tik terminio atvaizdo pėdsakus — šilumines aureoles, bylojančias apie buvusį gyvybės buvimą. Koncentriniai ratilai aplink lizdo centrą primena garso bangas, sklindančias nuo nebylaus šaltinio. Kūrinys susieja ornitologinę dokumentaciją su abstrakčia vizija, kur mokslinė tikrovė tampa poetine metafora apie tuštumos skambėjimą.",
+      "image_prompt": "Photomontage of empty nest structure with thermal imprint halos suggesting absent bird presence. Concentric circular forms radiating outward like frozen sound waves. Soft focus organic textures of twigs dissolving at edges. Documentary photography merged with abstract expressionism. Layered translucent overlays creating depth. Palette: bone white thermal traces, ash grey nest materials, faded moss green organic matter, muted amber warmth residue, deep charcoal voids. Square format, melancholic scientific aesthetic, diffused natural lighting.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 3,
+      "title_lt": "Tetervino šokio spektras",
+      "year": "2026",
+      "medium_lt": "Mišri technika ant drobės",
+      "statement_lt": "Monumentali drobė fiksuoja išnykstantį tetervino tuoktuvių ritualą per garso spektrogramos prizmę. Ritmiškai pulsuojantys ovalai kyla spirale į viršų — tai vizualizuota tuoktuvių giesmė, kurios dažnis kasmet silpnėja. Drobės pakraščiuose matomas yrimas — pigmentai byra kaip smulkėjanti populiacija. Kūrinys dokumentuoja akimirką, kai ritualas dar egzistuoja, bet jo kontūrai jau neryškėja, skęsdami pelenų pilkumoje.",
+      "image_prompt": "Abstract oval spiral formations ascending vertically like visualized mating call frequencies. Rhythmic pulsating shapes in translucent smoke-like layers. Edges showing deliberate decay with pigment disintegration. Mixed media texture visible — paint and organic materials. Color harmony: bone white spiral cores, ash grey atmospheric space, faded moss green undertones, muted amber rhythm accents, deep charcoal grounding shadows. No literal bird imagery. Square format, ritualistic ceremonial mood, soft diffused lighting from above.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 4,
+      "title_lt": "Garso šešėlis ant nendrių",
+      "year": "2026",
+      "medium_lt": "Skaitmeninė abstrakcija",
+      "statement_lt": "Kūrinys tyrinėja akustinio šešėlio koncepciją — garsą kaip šviesą, paliekančią pėdsaką aplinkoje. Vertikalios nendrių formos tampa ekranais, ant kurių projektuojasi niekada neįrašytas baublių baubimas. Translucentiški sluoksniai persidengia, kurdami gylio iliuziją, tarsi žiūrovas skverbtųsi per laiko klodus. Kompozicijos apačioje formos tirpsta į nežinią — metafora populiacijų dugnui.",
+      "image_prompt": "Vertical reed-like translucent forms serving as screens for projected acoustic shadows. Layered overlapping planes creating depth illusion. Smoke-like sound wave patterns casting shadows on organic surfaces. Bottom of composition dissolving into void. Abstract expressionist approach with scientific undertones. Palette: bone white light penetration, ash grey atmospheric haze, faded moss green reed suggestions, muted amber sound warmth, deep charcoal lower dissolution. Square format, mysterious contemplative mood, lateral soft lighting.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 5,
+      "title_lt": "Melodija be kūno",
+      "year": "2026",
+      "medium_lt": "Skaitmeninė tapyba",
+      "statement_lt": "Tapyba vaizduoja giesmę kaip savarankišką esybę — melodiją, kuri egzistuoja net praradusi savo giesmininką. Eterinė forma levituoja tuščioje erdvėje, jos kontūrai vibruoja tarsi garso dažnio vizualizacija. Nėra nei paukščio, nei žemės — tik grynas akustinis palikimas. Spalvų perėjimai nuo šiltos gintaro iki šalto pelenų perteikia garsą užgęstantį, bet dar nevisiškai nutildytą. Kūrinys klausia: ar giesmė gali gyvuoti be giesmininko?",
+      "image_prompt": "Ethereal levitating melodic form in empty space, contours vibrating like sound frequency visualization. Translucent smoke-like entity without physical origin. Soft focus organic shape suggesting thermal imprint of absent body. Layered atmospheric depth with subtle edge decay. Color transitions: bone white luminous core, ash grey surrounding void, faded moss green organic traces, muted amber warmth fading to cool, deep charcoal deep space. Square format, existential contemplative mood, ambient sourceless illumination.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 6,
+      "title_lt": "Nutylėjimo kartografija",
+      "year": "2026",
+      "medium_lt": "Kolažas ir piešinys",
+      "statement_lt": "Kolažas sujungia fragmentuotus Lietuvos žemėlapius su garso bangų piešiniais, žymėdamas tuštėjančias nykstančių paukščių teritorijas. Kiekviena išblukusi zona reiškia teritoriją, kurioje giesmė nebegirdima. Rankiniai piešiniai ant senų kartografinių dokumentų sukuria laiko sluoksniavimą — praeities kraštovaizdžio atminties dialogą su dabartine tyla. Pakraščiai sąmoningai palikti neapdoroti, rodantys proceso fragmentiškumą.",
+      "image_prompt": "Collage combining fragmented vintage map elements with hand-drawn sound wave patterns. Faded territorial zones suggesting silenced bird habitats. Layered paper textures with visible edges and tears. Translucent overlays of acoustic wave drawings on cartographic documents. Color palette: bone white paper grounds, ash grey aged document tones, faded moss green territorial markings, muted amber aged paper, deep charcoal ink drawings. Square format, archival documentary aesthetic, flat even lighting revealing texture.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 7,
+      "title_lt": "Šiluma, kuri liko",
+      "year": "2026",
+      "medium_lt": "Infraraudonųjų spindulių estetikos fotografija",
+      "statement_lt": "Fotografija imituoja termovizijos estetiką, tačiau objektas — ne gyvūnas, o jo šiluminis pėdsakas ant šakos. Apskrita aureolė rodo vietą, kur kūnas ilsėjosi prieš akimirką. Aplink šiluminį centrą sklinda koncentriniai žiedai — metafora sklindančiai giesmei. Dokumentinis tikslumas čia susilieja su vizionierišku abstraktumu. Kūrinys klausia, kaip ilgai šiluma išlieka, kai šaltinis išnyksta.",
+      "image_prompt": "Thermal imaging aesthetic showing circular heat trace on branch surface, no bird present. Concentric rings radiating from warm center suggesting dissipating call. Scientific documentary photography style merged with abstract vision. Soft focus translucent thermal halos. Palette: bone white hotspot center, ash grey cooling zones, faded moss green organic branch suggestion, muted amber warmth traces, deep charcoal cold absence. Square format, forensic contemplative mood, infrared lighting simulation.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 8,
+      "title_lt": "Paukščių choro pauzė",
+      "year": "2026",
+      "medium_lt": "Daugiasluoksnė skaitmeninė grafika",
+      "statement_lt": "Grafika vizualizuoja akimirką tarp giesmių — pauzę, kuri tampa vis ilgesnė, kai rūšys nyksta. Horizontaliai išdėstyti tušti ovalai primena burnas, pasiruošusias giesmei, kuri taip ir neprasidės. Sluoksniavimas sukuria laiko dimensiją — kiekvienas sluoksnis tolsta į praeitį. Pakraščių irimas perteikia natūralų nykimo procesą, kur vizualinė forma seka garsinės tikrovės silpnėjimą.",
+      "image_prompt": "Horizontal arrangement of empty oval mouth-like shapes suggesting silenced choir members. Multiple translucent layers creating temporal depth, each layer receding into past. Smoke-like forms between ovals representing absent songs. Edge deterioration and decay visible throughout. Sonogram-inspired linear elements. Palette: bone white oval interiors, ash grey layered atmospheres, faded moss green organic undertones, muted amber nostalgic warmth, deep charcoal intervening voids. Square format, elegiac choral mood, soft frontal illumination.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 9,
+      "title_lt": "Tikučio atminties lazda",
+      "year": "2026",
+      "medium_lt": "Mišri technika — pigmentai ir pelenai",
+      "statement_lt": "Kūrinys naudoja tikrus pelenus kaip mediją — simbolinį tiltą tarp materialumo ir išnykimo. Vertikali lazda formuoja centrinę ašį, aplink kurią sukasi dūmų pavidalo garso vizualizacijos. Tikučio — vienos iš nykstančių Lietuvos paukščių rūšių — balsas čia tampa abstrakčia forma, užšaldyta tarp buvimo ir nebuvimo. Pelenai suteikia kūriniui taktilų krūvį ir egzistencinį svorį.",
+      "image_prompt": "Vertical staff-like central form surrounded by spiraling smoke-shaped sound visualizations. Ash and pigment mixed media texture visible on surface. Translucent acoustic waves frozen mid-motion around axis. Abstract expressionist treatment with organic decay at periphery. Real ash particles creating granular texture. Palette: bone white pigment highlights, ash grey literal ash medium, faded moss green natural tones, muted amber warm accents, deep charcoal staff shadow. Square format, ritualistic somber mood, dramatic side lighting.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 10,
+      "title_lt": "Devyni balsai, viena tyla",
+      "year": "2026",
+      "medium_lt": "Skaitmeninė polifonija",
+      "statement_lt": "Devynios kompozicijos dalys vaizduoja devynias nykstančias Lietuvos paukščių rūšis, kiekviena — kaip unikali garso banga. Visos formos konverguoja į bendrą centrą, kur susitinka tyla. Vizualinė polifonija perteikiama per skirtingų dažnių vizualizacijas, kurių kiekviena turi savitą charakterį, bet visos dalinasi bendra lemtimi. Kraštinės formos jau pradėjusios irti, centrinės dar išlaiko ryškumą.",
+      "image_prompt": "Nine distinct sound wave forms converging toward silent center point. Each form unique acoustic signature shape, all translucent and smoke-like. Polyphonic visual arrangement suggesting chorus becoming unison silence. Peripheral forms showing more decay than central ones. Layered depth with ethereal overlapping. Scientific sonogram aesthetics merged with abstract expressionism. Palette: bone white converging points, ash grey atmospheric space, faded moss green individual variations, muted amber warm signatures, deep charcoal central void. Square format, polyphonic solemn mood.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 11,
+      "title_lt": "Miglos anatomija",
+      "year": "2026",
+      "medium_lt": "Fotografinė abstrakcija",
+      "statement_lt": "Fotografija fiksuoja rytinę miglą kaip akustinę terpę — mediją, per kurią keliauja paskutinės giesmės. Miglos kūnas anatomuojamas į sluoksnius, kiekvienas perteikiantis skirtingą garso dažnį. Dokumentinio tikslumu užfiksuota atmosferinė būsena transformuojama į metaforą apie garsą, kuris tirpsta, kol galų gale nebelieka ko fiksuoti. Minkštas fokusas pabrėžia ribos tarp matymo ir negirdėjimo neaiškumą.",
+      "image_prompt": "Morning mist photographed as acoustic medium, layered anatomy of fog revealing different sound frequency zones. Soft focus documentary photography transformed into abstract vision. Translucent horizontal strata suggesting soundwave propagation layers. Atmospheric moisture particles catching light. Subtle decay at frame edges. Palette: bone white illuminated mist, ash grey deeper fog layers, faded moss green ground suggestion, muted amber dawn light traces, deep charcoal distant shadows. Square format, liminal atmospheric mood, diffused golden hour light.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 12,
+      "title_lt": "Genio ritmo atspaudas",
+      "year": "2026",
+      "medium_lt": "Reljefo grafika",
+      "statement_lt": "Grafika perteikia juodojo genio kalimo ritmą kaip fizinį reljefo atspaudą erdvėje. Koncentriniai impulsų ratilai sklinda nuo nematomo šaltinio, jų intensyvumas silpnėja su atstumu. Vizualinė forma primena tiek sonogramą, tiek medžio rievę — genio gyvastis susilieja su jo buveine. Pakraščiuose ritmas išblunka, signalizuodamas populiacijos mažėjimą Lietuvos miškuose.",
+      "image_prompt": "Concentric rhythmic pulse circles radiating from invisible source, suggesting woodpecker drumming pattern as physical relief. Sound impression frozen in space like tree rings. Translucent overlapping circular forms with decreasing intensity outward. Textural relief quality visible. Edge dissolution showing fading rhythm. Palette: bone white pulse centers, ash grey radiating waves, faded moss green organic wood tones, muted amber rhythmic accents, deep charcoal source void. Square format, percussive meditative mood, raking light emphasizing texture.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 13,
+      "title_lt": "Pelėdos kvietimas į tuštumą",
+      "year": "2026",
+      "medium_lt": "Tamsiai atmosferinė tapyba",
+      "statement_lt": "Tapyba skendi gilumoje, iš kurios kyla vienintelis garso bangos siluetas — pelėdos ūkavimas nakties tyloje. Tamsa čia nėra tuštuma, bet prisotinta potencialaus garso, kuris niekada neišsipildys. Šviesos ir tamsos gradacijos perteikia garso kelionę nuo šaltinio iki nutildymo. Kūrinio melancolija kyla iš supratimo, kad ši giesmė gali būti paskutinė.",
+      "image_prompt": "Deep atmospheric darkness with single translucent sound wave form rising like owl call. Darkness not empty but pregnant with potential unborn sounds. Light to dark gradations showing sound journey from source to silence. Smoke-like ascending form dissolving at top. Subtle glow at wave origin. Palette: bone white call visualization, ash grey mid-tones, faded moss green lower organic hints, muted amber warm glow source, deep charcoal dominant atmospheric darkness. Square format, nocturnal melancholic mood, single subtle light source below.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 14,
+      "title_lt": "Lizdžemio archeologija",
+      "year": "2026",
+      "medium_lt": "Dokumentinis kolažas",
+      "statement_lt": "Kolažas imituoja archeologinę dokumentaciją, kur iškasenų vietoje — akustiniai artefaktai. Sluoksniuotos dirvožemio struktūros slepia užsilikusius garsų pėdsakus, tarsi giesmės būtų fosilizavusios. Mokslinės dokumentacijos estetika suteikia kūriniui objektyvumo iliuziją, tačiau objektai — nepagaunami ir efemeriški. Kraštų irimas primena apie lauko tyrimo ribotumą prieš nykimo procesus.",
+      "image_prompt": "Archaeological documentation aesthetic showing soil layer cross-section with fossilized sound traces. Scientific diagram style revealing acoustic artifacts embedded in earth strata. Translucent wave forms frozen within layered ground. Collaged documentary elements with measurement marks. Edge deterioration suggesting field study limitations. Palette: bone white document background, ash grey soil layers, faded moss green organic deposits, muted amber artifact highlights, deep charcoal deep strata. Square format, scientific archaeological mood, flat clinical lighting.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 15,
+      "title_lt": "Sparno oro skulptūra",
+      "year": "2026",
+      "medium_lt": "Kinetinės skulptūros vizualizacija",
+      "statement_lt": "Skaitmeninė vizualizacija dokumentuoja įsivaizduojamą skulptūrą — oro sūkurį, paliktą sparno mostelėjimo. Efemeriška forma egzistuoja tik akimirką, bet kūrinys ją sustingdo amžinybei. Translucentiški sluoksniai perteikia judėjimo trajektorijas, kurios daugiau nesikartoja. Kūrinys tyrinėja santykį tarp skulptūros pastovumo ir garso trumpalaikiškumo, klausdamas, kaip įamžinti tai, kas prigimtimi praeinantį.",
+      "image_prompt": "Air vortex sculpture visualization showing frozen wing movement traces. Ephemeral kinetic form captured in perpetuity. Translucent layered trajectories of flight motion. Smoke-like swirling patterns suggesting repeated movements that cease. Soft focus organic turbulence forms. Sculptural presence without solid matter. Palette: bone white air luminosity, ash grey vortex shadows, faded moss green organic movement traces, muted amber kinetic warmth, deep charcoal stillness anchors. Square format, kinetic contemplative mood, ambient diffused lighting.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 16,
+      "title_lt": "Gervių vedlys pradingęs",
+      "year": "2026",
+      "medium_lt": "Panoraminė skaitmeninė tapyba",
+      "statement_lt": "Tapyba fiksuoja gervių migracinį kelią iš paukščių taško — V formos nebėra, liko tik akustiniai šleifai danguje. Horizontalus formatas pabrėžia kelionės tęstinumą, bet formos fragmentacija signalizuoja nutrūkusius ryšius. Kiekvienas dūmų pavidalo pėdsakas rodo, kur kažkada skrido paukštis, dabar jo nėra. Elegija migruojančiam būriui, kurio skaičius mažėja kasmet.",
+      "image_prompt": "Panoramic sky view with V-formation acoustic trails but no birds visible. Migration path shown as smoke-like translucent traces across horizontal expanse. Fragmented sound wave forms suggesting broken flock connections. Ethereal contrails of absent wing beats. Layered atmospheric depth with edge decay. Palette: bone white trail luminosity, ash grey sky atmosphere, faded moss green horizon suggestion, muted amber warm trail edges, deep charcoal gaps between trails. Square format, elegiac migratory mood, high soft daylight.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 17,
+      "title_lt": "Vandens vibracija",
+      "year": "2026",
+      "medium_lt": "Akvarelės skaitmeninė interpretacija",
+      "statement_lt": "Kūrinys perteikia paukščio giesmės poveikį vandens paviršiui — koncentriniai ratilai sklinda nuo nematomo garso šaltinio. Akvarelės skaidrumas tampa metafora garso trapumui. Vandens ir garso elementų susiliejimas kuria sinesteziją, kur matoma tai, kas paprastai tik girdima. Ratilų silpnėjimas pakraščiuose atspindi giesmės blėsimą laike ir erdvėje.",
+      "image_prompt": "Watercolor aesthetic showing water surface with concentric ripples from invisible sound source. Bird call visualized as liquid vibration patterns. Transparent overlapping circles radiating outward with decreasing intensity. Synesthetic translation of sound to water movement. Soft focus aqueous organic forms. Palette: bone white light reflections, ash grey water shadows, faded moss green depth tones, muted amber warm ripple edges, deep charcoal deep water. Square format, synesthetic meditative mood, overcast soft lighting on water.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 18,
+      "title_lt": "Giesmininko skeletas",
+      "year": "2026",
+      "medium_lt": "Anatominis piešinys",
+      "statement_lt": "Piešinys tyrinėja giesmės anatomiją — ne paukščio kūno, bet paties garso struktūrą. Skeleto pavidalo linijos formuoja dainuojančio balso architektūrą, atskleisdamos paslėptą giesmės konstrukciją. Mokslinės ilustracijos tradicija čia tarnauja abstrakčiai idėjai. Skeletas — tai giesmė, netekusi minkštųjų audinių, likusi kaip struktūrinė atmintis. Irimo žymės signalizuoja, kad net ši atmintis ilgainiui suyra.",
+      "image_prompt": "Anatomical drawing style showing skeletal structure of song itself, not bird body. Linear framework revealing hidden architecture of melody. Scientific illustration tradition serving abstract concept. Translucent layered bone-like structures forming acoustic anatomy. Decay marks on structural elements. Soft organic linework dissolving at edges. Palette: bone white skeletal framework, ash grey structural shadows, faded moss green organic undertones, muted amber warmth in joints, deep charcoal background void. Square format, scientific poetic mood, even clinical lighting.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 19,
+      "title_lt": "Devynbalsė tyla",
+      "year": "2026",
+      "medium_lt": "Garso vizualizacijos instaliacija",
+      "statement_lt": "Instaliacija virtualioje erdvėje vizualizuoja devynių skirtingų paukščių giesmių nutildymą vienu metu. Erdvėje plaukioja devyni translucentiški garso debesys, kiekvienas palaipsniui blėstantis. Interaktyvumo nebuvimas pabrėžia stebėtojo bejėgiškumą — tyla ateina nepriklausomai nuo mūsų norų. Kūrinys dokumentuoja konkrečią 2026 metų akustinę situaciją Lietuvos miškuose.",
+      "image_prompt": "Installation visualization showing nine translucent sound clouds floating in virtual space, each gradually fading. Different acoustic signatures represented as unique smoke-like forms. Documentary of specific acoustic moment. No interaction possible - silence approaches inevitably. Ethereal floating forms at various stages of dissolution. Palette: bone white cloud cores, ash grey atmospheric space, faded moss green organic variation, muted amber warm traces, deep charcoal background void between clouds. Square format, documentary installation mood, ambient gallery lighting.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 20,
+      "title_lt": "Mitologinio paukščio šešėlis",
+      "year": "2026",
+      "medium_lt": "Mitologinis kolažas",
+      "statement_lt": "Kolažas susieja lietuvių mitologijos paukščių simboliką su šiandienos nykimo realybe. Senųjų raštų ornamentai persidengia su garso bangų vizualizacijomis, kurdami laiko tiltą. Mitiniai paukščiai — dausų pasiuntiniai — čia tampa nykstančių rūšių alegorijomis. Kolažo fragmentiškumas atspindi kultūrinės ir biologinės atminties irimo paralelę. Tarp sluoksnių — tuštuma, kurioje garsas nebeskamba.",
+      "image_prompt": "Mythological collage layering Lithuanian folk ornament bird motifs with sound wave visualizations. Ancient pattern elements overlapping with acoustic signatures. Time bridge between mythical messenger birds and endangered species today. Fragmented layered composition showing parallel cultural and biological memory decay. Voids between layers where sound no longer resonates. Palette: bone white ornament highlights, ash grey aged elements, faded moss green folk color traces, muted amber traditional warmth, deep charcoal shadow gaps. Square format, mythological elegiac mood.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 21,
+      "title_lt": "Frekvencijų kapinynas",
+      "year": "2026",
+      "medium_lt": "Monumentali grafika",
+      "statement_lt": "Grafika vaizduoja horizontaliai išrikiuotas garso frekvencijų formas kaip kapų paminklus. Kiekvienas stačiakampis žymi specifinę dažnių juostą, kurioje tam tikra rūšis gieda — arba giedojo. Kai kurios formos jau visiškai išblukusios, kitos dar išlaiko kontūrus. Monumentalumas perteikiamas per formos svarbą, ne per dydį. Kapinyno metafora kviečia suvokti nykimą kaip negrįžtamą netektį.",
+      "image_prompt": "Horizontal arrangement of frequency forms as grave markers. Rectangular sound band monuments in cemetery-like grid. Some forms completely faded, others maintaining contours. Monumental gravity through formal importance. Translucent smoke-like memorial shapes. Scientific frequency bands transformed into memorial aesthetic. Palette: bone white marker faces, ash grey weathered surfaces, faded moss green organic moss growth suggestion, muted amber aged warmth, deep charcoal ground shadows. Square format, monumental memorial mood, overcast diffused solemn lighting.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 22,
+      "title_lt": "Aušros choro liekana",
+      "year": "2026",
+      "medium_lt": "Šviesos ir šešėlių studija",
+      "statement_lt": "Studija dokumentuoja aušros chorą — tą akimirką, kai visi paukščiai pragysta kartu. Tačiau čia vizualizuota ne pilna polifonija, o jos liekana — retėjantis garsų audinys. Šviesos ir šešėlių santykis perteikia pilnatvės ir trūkumo dialektiką. Kiekvienas šviesos spindulys — likęs balsas, kiekvienas šešėlis — nutilusi giesmė. Kompozicija balansuoja ant ribos tarp šventumo ir gedulo.",
+      "image_prompt": "Light and shadow study of dawn chorus moment as remnant, not full polyphony. Thinning acoustic fabric visualized through light ray and shadow interplay. Each light beam represents remaining voice, each shadow a silenced song. Balance between sacred illumination and mourning darkness. Translucent light forms intersecting shadow zones. Palette: bone white light beams, ash grey transitional zones, faded moss green organic filtering, muted amber dawn warmth, deep charcoal shadow mass. Square format, sacred elegiac mood, dramatic dawn lighting.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 23,
+      "title_lt": "Paskutinio įrašo fragmentai",
+      "year": "2026",
+      "medium_lt": "Archyvinė dokumentacija",
+      "statement_lt": "Kūrinys imituoja archyvinę garso įrašo dokumentaciją — magnetinės juostos fragmentus, kurių dalis jau sunaikinta. Vizualizuojama pati garso fiksavimo medija, ne turinys. Juostos irimas tampa metafora pačių įrašų trapumui — net dokumentacija gali išnykti. Archyvo estetika suteikia kūriniui istorinę perspektyvą, primindama, kad tai, ką saugome, irgi yra laikina.",
+      "image_prompt": "Archival documentation aesthetic showing magnetic tape fragments, some sections destroyed. Sound recording medium visualization rather than content. Tape deterioration as metaphor for documentation fragility. Scattered fragments with translucent acoustic wave ghost traces. Archive preservation aesthetic with institutional elements. Palette: bone white documentation paper, ash grey tape material, faded moss green aging patina, muted amber institutional warmth, deep charcoal deteriorated sections. Square format, archival historical mood, flat preservation lighting.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 24,
+      "title_lt": "Tyloje gimęs",
+      "year": "2026",
+      "medium_lt": "Konceptuali skaitmeninė tapyba",
+      "statement_lt": "Uždarančioji parodos dalis vaizduoja paradoksą — paukštį, kuris gimsta tyloje, niekada nepažinęs savo rūšies giesmės. Tuščia garso banga sklinda nuo formos, kuri neturi atmintinės. Translucentiški sluoksniai čia perteikia ne nykimą, o nebuvimą nuo pradžių. Kūrinys klausia apie ateitį, kurioje kai kurie garsai bus tik archyviniai įrašai, negirdimi naujoms kartoms. Elegija tam, kas niekada nebuvo patirta.",
+      "image_prompt": "Conceptual painting of paradox - being born in silence, never knowing species song. Empty sound wave emanating from form without acoustic memory. Translucent layers representing absence from beginning rather than decay. No inherited memory visualization. Void at center where song should originate. Future-oriented elegy for unexperienced sounds. Palette: bone white empty wave forms, ash grey atmospheric void, faded moss green organic origin point, muted amber unrealized warmth, deep charcoal surrounding silence. Square format, conceptual elegiac mood, ambient sourceless illumination.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    }
+  ],
+  "poster_prompt": "Abstract atmospheric composition suggesting vanishing birdsong. Translucent smoke-like undulating forms resembling frozen sound waves mid-dissipation, floating across layered ethereal space. Soft focus organic shapes evoking acoustic shadows and thermal imprints of absent bodies. Visual language merging scientific sonogram aesthetics with abstract expressionism. No literal bird depictions. Subtle decay and dissolution at edges suggesting fading presence. Delicate layered textures with depth and dimension. Haunting negative spaces where sound once existed. Color palette strictly bone white, ash grey, faded moss green, muted amber, and deep charcoal. Gallery-quality fine art aesthetic. Contemplative and melancholic mood. Square format. Minimal, powerful, evocative. No text, no typography, no symbols, no logos. Professional exhibition poster quality with museum-grade sophistication.",
+  "social_caption_lt": "Kur dingsta giesmė? Lietuvos paukščių balsai tylėja — teritorijos tuštėja, o mes dar galime išgirsti paskutines akimirkas prieš tylą. Paroda kviečia sustoti ir įsiklausyti į tai, kas nyksta. Aplankyk ir pajusk garso nebuvimą."
+}

@@ -1,206 +1,206 @@
 {
-  "month": "2026-05",
-  "generated_at": "2026-05-14T19:16:39.835458+00:00",
+  "month": "2026-06",
+  "generated_at": "2026-06-01T20:43:35.774501+00:00",
   "theme": {
-    "title": "Kur dingo bitės?",
-    "subtitle": "Paroda apie tylą, kuri ateina prieš nebūtį.",
-    "essay": "Gegužė Lietuvos miške turėtų skambėti. Žydinčios blindės, išsiskleidusios gudobelės, pirmosios liepų žiedų kekės — viskas šaukia apdulkintojus. Tačiau pastarąjį dešimtmetį ši polifonija retėja. Laukinių bičių, kamanių, širšių populiacijos Europoje sumažėjo trečdaliu. Kai kurios rūšys išnyko tyliai, net nespėjusios gauti lietuviško vardo. Ši paroda neklausia, kodėl jos dingsta — tai jau žinome. Pesticidai, monokultūros, fragmentuotos buveinės. Verčiau klausiame: kaip atrodo pasaulis, kuriame jų nėra? Dvidešimt keturi kūriniai tiria tuštumą, likusią po biologinės funkcijos. Vizualiai tai — nevaisingi žiedai, sustingęs nektaras, aviliai kaip archeologiniai objektai. Kai kuriuose darbuose bitė dar matoma, bet jau kaip prisiminimas, holografinė iškasena. Kituose jos nebėra visai — tik augalai, laukiantys apsilankymo, kuris neateis. Parodos pavadinimas — klausimas be atsakymo. Jis skirtas ne tik entomologijai, bet ir platesniam praradimo jausmui: kaip atpažįstame dingimą, kai jis vyksta lėčiau nei viena žmogaus karta gali pastebėti? Gegužės miškas dar ūžia. Bet jei įsiklausysite, girdėsite, kad ūžimas kasmet vis siauresnis. Paroda nekaltina ir neguodžia — ji tik fiksuoja akimirką, kol dar yra ką fiksuoti.",
-    "visual_direction": "Hyper-detailed botanical illustration style merged with subtle digital decay — petals rendered with scientific precision but with missing sections, as if data was corrupted. Bees, when present, appear translucent or spectral, never fully solid. Compositions feel like archival plates from a natural history museum of the near future.",
-    "palette_hint": "pollen yellow, bruised violet, dried honey amber, ash white, deep forest shadow"
+    "title": "Kur dingsta giesmė",
+    "subtitle": "Paroda apie paskutines akimirkas prieš tylą — nykstančių Lietuvos paukščių balsus ir jų tuštėjančias teritorijas.",
+    "essay": "Birželis Lietuvos miške yra garso mėnuo. Paukščiai gieda intensyviausiai — ginasi, vilioja, skelbia. Tačiau kas dešimtmetį šis choras plonėja. Meldinė nendrinukė, kurapka, griežlė — jų balsai traukiasi iš mūsų akustinės atminties tyliau nei bet koks istorinis įvykis. Ši paroda nekelia aliarmo ir nemoralizuoja. Ji tiesiog klausia: ką reiškia girdėti balsą, kuris netrukus gali tapti archyvu? Dvidešimt keturi kūriniai išdėstyti pagal garso nykimo logiką — nuo pilno, sodraus buvimo iki fragmentų, aidų ir galiausiai tylos. Kiekvienas kūrinys susijęs su konkrečia Lietuvos paukščių rūšimi, kurios populiacija mažėja arba jau išnykusi šalyje. Vizualiai tai nėra paukščių portretai. Tai struktūros, kurias palieka garsas: virpesių pėdsakai ore, tuščios teritorijos žemėlapiai, akustinės šešėlių formos. Lankytojas miške girdi tikrus paukščius ir mato tai, ko galbūt greitai nebegirdės. Augmented reality čia veikia kaip laiko membrana — ne prideda fantazijos, o parodo trūkumą, kuris dar nematomas, bet jau vyksta. Mes nekuriame elegijos. Mes kuriame dokumentą apie perėjimą iš buvimo į nebuvimą. Birželio miškas yra geriausia vieta tai patirti — čia giesmė dar skamba, bet jos kontūrai jau pradeda irti.",
+    "visual_direction": "Translucent, smoke-like forms suggesting sound waves frozen mid-dissipation. Soft focus organic shapes that feel like acoustic shadows or thermal imprints left by absent bodies. Visual language between scientific sonogram and abstract expressionism — no literal bird depictions. Layered, ethereal, with subtle decay at edges.",
+    "palette_hint": "bone white, ash grey, faded moss green, muted amber, deep charcoal"
   },
-  "poster": "/exhibitions/2026-05/images/poster.png",
-  "social_caption_lt": "Tylus pasaulis be dūzgimo. Kur dingo bitės, kurios kadaise pildė mūsų sodus gyvybe? Ši paroda kviečia sustoti ir įsiklausyti į tylą — tą, kuri ateina prieš nebūtį. Aplankyk ir pajusk, ko netenkame, kol dar nevėlu.",
+  "poster": "/exhibitions/2026-06/images/poster.png",
+  "social_caption_lt": "Kur dingsta giesmė? Lietuvos paukščių balsai tylėja — teritorijos tuštėja, o mes dar galime išgirsti paskutines akimirkas prieš tylą. Paroda kviečia sustoti ir įsiklausyti į tai, kas nyksta. Aplankyk ir pajusk garso nebuvimą.",
   "artworks": [
     {
       "id": 1,
       "artist": "",
-      "title_lt": "Paskutinė inventorizacija",
+      "title_lt": "Paskutinis kvėpavimas virš pelkės",
       "url": "https://miskogalerija.lt/qr/1.html",
-      "image": "/exhibitions/2026-05/images/01.png",
+      "image": "/exhibitions/2026-06/images/01.png",
       "target": null
     },
     {
       "id": 2,
       "artist": "",
-      "title_lt": "Žiedadulkių kartografija",
+      "title_lt": "Tuščias lizdas, pilnas aidų",
       "url": "https://miskogalerija.lt/qr/2.html",
-      "image": "/exhibitions/2026-05/images/02.png",
+      "image": "/exhibitions/2026-06/images/02.png",
       "target": null
     },
     {
       "id": 3,
       "artist": "",
-      "title_lt": "Tylus avilys",
+      "title_lt": "Tetervino šokio spektras",
       "url": "https://miskogalerija.lt/qr/3.html",
-      "image": "/exhibitions/2026-05/images/03.png",
+      "image": "/exhibitions/2026-06/images/03.png",
       "target": null
     },
     {
       "id": 4,
       "artist": "",
-      "title_lt": "Nektaro sapnas Nr. 7",
+      "title_lt": "Garso šešėlis ant nendrių",
       "url": "https://miskogalerija.lt/qr/4.html",
-      "image": "/exhibitions/2026-05/images/04.png",
+      "image": "/exhibitions/2026-06/images/04.png",
       "target": null
     },
     {
       "id": 5,
       "artist": "",
-      "title_lt": "Šešių kojų malda",
+      "title_lt": "Melodija be kūno",
       "url": "https://miskogalerija.lt/qr/5.html",
-      "image": "/exhibitions/2026-05/images/05.png",
+      "image": "/exhibitions/2026-06/images/05.png",
       "target": null
     },
     {
       "id": 6,
       "artist": "",
-      "title_lt": "Anatomija #12: Liežuvėlis",
+      "title_lt": "Nutylėjimo kartografija",
       "url": "https://miskogalerija.lt/qr/6.html",
-      "image": "/exhibitions/2026-05/images/06.png",
+      "image": "/exhibitions/2026-06/images/06.png",
       "target": null
     },
     {
       "id": 7,
       "artist": "",
-      "title_lt": "Medaus fosilija",
+      "title_lt": "Šiluma, kuri liko",
       "url": "https://miskogalerija.lt/qr/7.html",
-      "image": "/exhibitions/2026-05/images/07.png",
+      "image": "/exhibitions/2026-06/images/07.png",
       "target": null
     },
     {
       "id": 8,
       "artist": "",
-      "title_lt": "Tuščia celė",
+      "title_lt": "Paukščių choro pauzė",
       "url": "https://miskogalerija.lt/qr/8.html",
-      "image": "/exhibitions/2026-05/images/08.png",
+      "image": "/exhibitions/2026-06/images/08.png",
       "target": null
     },
     {
       "id": 9,
       "artist": "",
-      "title_lt": "Kolektyvinio proto fragmentai",
+      "title_lt": "Tikučio atminties lazda",
       "url": "https://miskogalerija.lt/qr/9.html",
-      "image": "/exhibitions/2026-05/images/09.png",
+      "image": "/exhibitions/2026-06/images/09.png",
       "target": null
     },
     {
       "id": 10,
       "artist": "",
-      "title_lt": "Motinos portretas su dingusiais vaikais",
+      "title_lt": "Devyni balsai, viena tyla",
       "url": "https://miskogalerija.lt/qr/10.html",
-      "image": "/exhibitions/2026-05/images/10.png",
+      "image": "/exhibitions/2026-06/images/10.png",
       "target": null
     },
     {
       "id": 11,
       "artist": "",
-      "title_lt": "Apdulkinimo protokolas (nutrauktas)",
+      "title_lt": "Miglos anatomija",
       "url": "https://miskogalerija.lt/qr/11.html",
-      "image": "/exhibitions/2026-05/images/11.png",
+      "image": "/exhibitions/2026-06/images/11.png",
       "target": null
     },
     {
       "id": 12,
       "artist": "",
-      "title_lt": "Gėlė, kuri nebežydi niekam",
+      "title_lt": "Genio ritmo atspaudas",
       "url": "https://miskogalerija.lt/qr/12.html",
-      "image": "/exhibitions/2026-05/images/12.png",
+      "image": "/exhibitions/2026-06/images/12.png",
       "target": null
     },
     {
       "id": 13,
       "artist": "",
-      "title_lt": "Geluonies muziejus",
+      "title_lt": "Pelėdos kvietimas į tuštumą",
       "url": "https://miskogalerija.lt/qr/13.html",
-      "image": "/exhibitions/2026-05/images/13.png",
+      "image": "/exhibitions/2026-06/images/13.png",
       "target": null
     },
     {
       "id": 14,
       "artist": "",
-      "title_lt": "Pasakų knyga be bičių",
+      "title_lt": "Lizdžemio archeologija",
       "url": "https://miskogalerija.lt/qr/14.html",
-      "image": "/exhibitions/2026-05/images/14.png",
+      "image": "/exhibitions/2026-06/images/14.png",
       "target": null
     },
     {
       "id": 15,
       "artist": "",
-      "title_lt": "Dūmų kalba",
+      "title_lt": "Sparno oro skulptūra",
       "url": "https://miskogalerija.lt/qr/15.html",
-      "image": "/exhibitions/2026-05/images/15.png",
+      "image": "/exhibitions/2026-06/images/15.png",
       "target": null
     },
     {
       "id": 16,
       "artist": "",
-      "title_lt": "Algoritmas atpažįsta gėlę, bet neranda bitės",
+      "title_lt": "Gervių vedlys pradingęs",
       "url": "https://miskogalerija.lt/qr/16.html",
-      "image": "/exhibitions/2026-05/images/16.png",
+      "image": "/exhibitions/2026-06/images/16.png",
       "target": null
     },
     {
       "id": 17,
       "artist": "",
-      "title_lt": "Skrydžio trajektorija (rekonstrukcija)",
+      "title_lt": "Vandens vibracija",
       "url": "https://miskogalerija.lt/qr/17.html",
-      "image": "/exhibitions/2026-05/images/17.png",
+      "image": "/exhibitions/2026-06/images/17.png",
       "target": null
     },
     {
       "id": 18,
       "artist": "",
-      "title_lt": "Vaško luitas",
+      "title_lt": "Giesmininko skeletas",
       "url": "https://miskogalerija.lt/qr/18.html",
-      "image": "/exhibitions/2026-05/images/18.png",
+      "image": "/exhibitions/2026-06/images/18.png",
       "target": null
     },
     {
       "id": 19,
       "artist": "",
-      "title_lt": "Paskutinis šokis",
+      "title_lt": "Devynbalsė tyla",
       "url": "https://miskogalerija.lt/qr/19.html",
-      "image": "/exhibitions/2026-05/images/19.png",
+      "image": "/exhibitions/2026-06/images/19.png",
       "target": null
     },
     {
       "id": 20,
       "artist": "",
-      "title_lt": "Devyni gyvenimai meduje",
+      "title_lt": "Mitologinio paukščio šešėlis",
       "url": "https://miskogalerija.lt/qr/20.html",
-      "image": "/exhibitions/2026-05/images/20.png",
+      "image": "/exhibitions/2026-06/images/20.png",
       "target": null
     },
     {
       "id": 21,
       "artist": "",
-      "title_lt": "Mito rekonstrukcija: bitė ir dievas",
+      "title_lt": "Frekvencijų kapinynas",
       "url": "https://miskogalerija.lt/qr/21.html",
-      "image": "/exhibitions/2026-05/images/21.png",
+      "image": "/exhibitions/2026-06/images/21.png",
       "target": null
     },
     {
       "id": 22,
       "artist": "",
-      "title_lt": "Alergijos nebebus",
+      "title_lt": "Aušros choro liekana",
       "url": "https://miskogalerija.lt/qr/22.html",
-      "image": "/exhibitions/2026-05/images/22.png",
+      "image": "/exhibitions/2026-06/images/22.png",
       "target": null
     },
     {
       "id": 23,
       "artist": "",
-      "title_lt": "Vaiko klausimas",
+      "title_lt": "Paskutinio įrašo fragmentai",
       "url": "https://miskogalerija.lt/qr/23.html",
-      "image": "/exhibitions/2026-05/images/23.png",
+      "image": "/exhibitions/2026-06/images/23.png",
       "target": null
     },
     {
       "id": 24,
       "artist": "",
-      "title_lt": "Paskutinis archyvo puslapis",
+      "title_lt": "Tyloje gimęs",
       "url": "https://miskogalerija.lt/qr/24.html",
-      "image": "/exhibitions/2026-05/images/24.png",
+      "image": "/exhibitions/2026-06/images/24.png",
       "target": null
     }
   ]
