@@ -1,0 +1,277 @@
+{
+  "theme": {
+    "title": "Naktinių drugelių abėcėlė",
+    "subtitle": "Paroda apie naktinius drugelius kaip vasaros nakties kalbą, kurią pamiršome skaityti.",
+    "essay": "Rugpjūčio naktys Lietuvos miškuose yra trumpiausios ir karščiausios. Tai laikas, kai naktiniai drugeliai — heterocera — pasiekia didžiausią įvairovę ir aktyvumą. Jie skrenda prie šviesų, kurias paliekame įjungtas, ir miršta ant palangių. Mes juos vadiname kandimis, nors dauguma jų nieko neėda — suaugę gyvena vos kelias dienas ir neturi burnos. Ši paroda tiria naktinius drugelius kaip semiotinę sistemą: jų sparnų raštai, skrydžio trajektorijos, reakcijos į ultravioletinę šviesą sudaro savotišką kalbą, kurios gramatikos niekada nesuprasime. Čia nėra romantizavimo. Naktiniai drugeliai nėra gražūs ta prasme, kuria gražūs dieniniai — jie dažnai pilki, gauruoti, su akių imitacijomis, kurios primena kaukes arba archajišką raštą. Jų grožis yra funkcionalus ir svetimas. Dvidešimt keturi kūriniai dokumentuoja dvidešimt keturias rūšis, aptinkamas Lietuvos miškuose rugpjūčio mėnesį. Kiekvienas darbas yra portretas ir šifras vienu metu. Lankytojas, eidamas per mišką naktį arba prieblandoje, susitinka su šiais vaizdais tarp medžių — ten, kur tikri drugeliai irgi skrenda. Paroda neklausia, ką drugeliai reiškia. Ji klausia, kodėl mes manome, kad viskas turi kažką reikšti, ir ar galime tiesiog stebėti be interpretacijos.",
+    "visual_direction": "Macro-level scientific illustration aesthetic merged with subtle glitch textures. Each moth is rendered with entomological precision but placed against abstract fields of bioluminescent patterns and UV-reactive color bleeds. The mood is nocturnal, clinical yet hypnotic — documentation that borders on hallucination.",
+    "palette_hint": "ultraviolet blue, ash grey, pale ochre, deep forest black, phosphorescent white"
+  },
+  "artworks": [
+    {
+      "id": 1,
+      "title_lt": "Pirmoji raidė: tyluma",
+      "year": "2026",
+      "medium_lt": "Skaitmeninė tapyba",
+      "statement_lt": "Kūrinyje vaizduojamas didysis naktinis drugelis, kurio sparnai suskaidyti į pikselių laukus – tarsi pati gamta būtų pradėjusi irti skaitmeninėje erdvėje. Drugelio kūnas išlieka moksliškai tikslus, tačiau fonas pulsuoja ultravioletiniais dažnių virpesiais. Tai įžanga į abėcėlę, kurios pirmoji raidė yra tyla – ta akimirka, kai naktis dar tik prasideda ir sparnuotieji alfabeto nešėjai dar neatskrido prie šviesos.",
+      "image_prompt": "Macro scientific illustration of a large hawk moth with wings fragmenting into digital glitch pixels, entomologically precise body structure, set against abstract bioluminescent field with UV-reactive color bleeds. Color palette: ultraviolet blue background, ash grey wing details, pale ochre body segments, deep forest black shadows, phosphorescent white highlights on wing edges. Clinical yet hypnotic mood, nocturnal lighting from below suggesting artificial light source. Square format composition with moth centered, subtle scan line artifacts throughout.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 2,
+      "title_lt": "Antenos kaip sakiniai",
+      "year": "2026",
+      "medium_lt": "Fotomontažas",
+      "statement_lt": "Ekstremali makronuotrauka fiksuoja naktinio drugelio antenas, kurios šakojasi lyg archajiško rašto ženklai. Vaizdas sluoksniuotas su archyviniais entomologinių atlasų fragmentais, sukuriant dialogą tarp mokslinės dokumentacijos ir poetinės interpretacijos. Antenų plaukeliai virsta raidėmis, kurių niekas nebesupranta. Fosforescentiniai balti taškai žymi vietas, kur vabzdys jaučia feromonus – nematomą kalbą, sklindančią nakties ore.",
+      "image_prompt": "Extreme macro photograph of moth antennae branching like ancient script characters, layered with vintage entomological atlas fragments creating double exposure effect. Feathered antennae details rendered with scientific precision, overlaid with subtle glitch texture bands. Background of deep forest black with scattered phosphorescent white dots suggesting pheromone particles. Pale ochre tones on antennae segments, ultraviolet blue ambient glow. Documentary style merged with collage aesthetic, nocturnal laboratory mood. Square format, antennae filling frame diagonally.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 3,
+      "title_lt": "Dulkių gramatika",
+      "year": "2026",
+      "medium_lt": "Mišri technika ant drobės",
+      "statement_lt": "Kūrinys tyrinėja drugelio sparnų žvynelių struktūrą kaip savotišką Brailio raštą. Kiekvienas žvynelis – atskira raidė, kartu sudaranti tekstą, kurį žmogaus akis mato kaip raštą, bet negali perskaityti. Pelenų pilkumo tonai dominuoja centre, kur sparnai pereina į abstrakciją, o pakraščiai išlaiko mokslinį tikslumą. Glitch tekstūros įsiterpia kaip vertimo klaidos tarp rūšių.",
+      "image_prompt": "Mixed media painting depicting moth wing scales as Braille-like texture system, transitioning from precise scientific rendering at edges to abstract pattern field in center. Individual scales visible as letter-like forms creating unreadable text. Ash grey dominates center, ultraviolet blue edges, pale ochre scale highlights. Deep forest black negative spaces between scales. Phosphorescent white dust particles floating. Subtle horizontal glitch lines disrupting surface. Clinical entomological precision meeting abstract expressionism. Nocturnal mood, specimen documentation aesthetic. Square format.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 4,
+      "title_lt": "Mėnulio sekretorė",
+      "year": "2026",
+      "medium_lt": "Skaitmeninė iliustracija",
+      "statement_lt": "Actias luna – amerikietiškasis mėnulinis drugelis – čia tampa naktinės korespondencijos simboliu. Jo ilgos uodegos primenančios juostos liejasi į abstrakcią, virsdamos rašysenos linijomis. Dokumentinio stiliaus anatomija susipina su mitologine interpretacija: drugelis kaip dangaus kūno pasiuntinys, nešantis žinutes, kurias galima perskaityti tik sapnuose. Bioluminescenciniai ornamentai fone pulsuoja lyg šifruoti pranešimai.",
+      "image_prompt": "Scientific illustration of Luna moth with elongated tail streamers dissolving into calligraphic abstract lines, entomologically accurate body and wing venation. Set against bioluminescent pattern field suggesting encoded messages. Color palette: pale ochre wing base, phosphorescent white wing margins, ultraviolet blue abstract calligraphy trails, deep forest black background, ash grey body fur detail. Mythological mood merged with specimen documentation style. Soft nocturnal lighting creating halo effect around moth. Glitch artifacts on wing edges. Square format, moth slightly off-center.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 5,
+      "title_lt": "Šviesos spąstuose",
+      "year": "2026",
+      "medium_lt": "Dokumentinė fotografija",
+      "statement_lt": "Entomologinių tyrimų scena: baltas audeklas, gyvsidabrio lempa, ir dešimtys naktinių drugelių, susirinkusių prie dirbtinės šviesos. Fotografija fiksuoja mokslininkų naudojamą metodą, tačiau glitch efektai paverčia dokumentą vizualine meditacija apie viliojimą ir apgaulę. Drugeliai čia – ne tik tyrimų objektai, bet ir simboliai būtybių, kurios seka šviesą, nežinodamos, kad ji netikra.",
+      "image_prompt": "Documentary photograph of entomological light trap scene with white sheet illuminated by mercury vapor lamp, dozens of moths gathered in various positions. Scientific field research aesthetic with subtle digital glitch distortions creating dreamlike quality. Moths rendered with taxonomic precision. Color palette: phosphorescent white sheet center, ultraviolet blue light source glow, ash grey moth bodies, deep forest black surrounding darkness, pale ochre wing patterns on select specimens. Hypnotic nocturnal mood suggesting ritual gathering. Square format, lamp slightly above center.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 6,
+      "title_lt": "Skaitmeninė metamorfozė",
+      "year": "2026",
+      "medium_lt": "Generatyvinė grafika",
+      "statement_lt": "Vikšro virtimas drugeliu čia pateikiamas kaip duomenų transformacijos procesas. Lėlytė vaizduojama kaip pereinamoji būsena tarp biologinio ir skaitmeninio, jos paviršius padengtas QR kodų fragmentais ir pikselių iškraipymais. Kūrinys klausia: ar technologijų amžiuje metamorfozė vis dar išlieka stebuklu, ar ji tapo tik algoritmu? Ultravioletinė pašvaistė apgaubia kokoną lyg skenavimo šviesa.",
+      "image_prompt": "Generative digital artwork depicting moth chrysalis in metamorphosis transition state, surface covered with fragmentary QR codes and pixel distortions. Biological cocoon form merging with digital data visualization aesthetic. Ultraviolet blue scanning light beam illuminating cocoon from side. Ash grey silk texture, pale ochre organic segments visible through digital overlay. Deep forest black void background with phosphorescent white data particles streaming from cocoon. Scientific specimen presentation merged with cybernetic transformation concept. Square format, cocoon vertical center.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 7,
+      "title_lt": "Nakties oda",
+      "year": "2026",
+      "medium_lt": "Tekstūrinė abstrakcija",
+      "statement_lt": "Ekstremalus priartinimas prie drugelio sparno paviršiaus sukuria beveik topografinį vaizdą – kalvų ir slėnių sistema, paslėpta po mikroskopinių žvynelių sluoksniais. Abstrakcija išryškina tai, kas nematoma plika akimi: nakties oda yra sudėtinga ir gyva. Pelenų ir ochros tonai kuria reljefo iliuziją, o fosforescentiniai taškai žymi bioluminescencijos zonas. Kūrinys kviečia pažvelgti arčiau.",
+      "image_prompt": "Extreme macro abstraction of moth wing surface as topographical landscape, microscopic scales creating hills and valleys texture. Scientific magnification aesthetic pushed to abstract territory. Color palette: ash grey scale ridges, pale ochre valleys, ultraviolet blue light catching scale edges, deep forest black crevices, phosphorescent white bioluminescent spots scattered throughout. Subtle glitch horizontal lines suggesting scanning artifacts. Clinical specimen documentation mood becoming meditative landscape study. Square format, filling entire frame with textured surface.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 8,
+      "title_lt": "Akių teatras",
+      "year": "2026",
+      "medium_lt": "Figūratyvinė tapyba",
+      "statement_lt": "Saturniidae šeimos drugelių sparnuose esančios akių dėmės čia tampa pagrindine figūra. Keturios didelės akys žvelgia į žiūrovą iš drobės, tačiau jų anatomija lieka entomologiškai tiksli – tai ne metafora, o mokslinė detalė, tapusi menu. Glitch iškraipymai suteikia akims gyvumo, tarsi jos mirksėtų. Fonas pulsuoja ultravioletiniais ornamentais, primenančiais tinklainės kraujagysles.",
+      "image_prompt": "Figurative painting of four large eyespot patterns from Saturniidae moth wings arranged as watching presence, entomologically precise rendering of concentric ring structures. Eyes appear to blink through subtle glitch distortion effects. Background of ultraviolet blue bioluminescent patterns resembling retinal blood vessels. Ash grey outer rings, pale ochre middle zones, deep forest black pupils, phosphorescent white central highlights. Hypnotic confrontational mood, nocturnal specimen study becoming portraiture. Square format, four eyespots arranged symmetrically.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 9,
+      "title_lt": "Archyvo klaida",
+      "year": "2026",
+      "medium_lt": "Kolažas",
+      "statement_lt": "XIX amžiaus entomologinių atlasų reprodukcijos sujungiamos su skaitmeninių trikdžių estetika, sukuriant įspūdį, kad archyvas yra pažeistas ir informacija išsikreipia. Drugeliai iš skirtingų epochų ir kontinentų susitinka vienoje plokštumoje, jų lotynški pavadinimai fragmentuoti ir neįskaitomi. Kūrinys kalba apie tai, kaip klasifikavimo sistemos, skirtos įamžinti, galiausiai irsta.",
+      "image_prompt": "Collage artwork combining 19th century entomological atlas reproductions with digital glitch disruptions, historical moth illustrations fragmenting and overlapping. Latin nomenclature text partially corrupted and illegible. Scientific archival aesthetic deteriorating into data decay. Color palette maintained through tinting: ultraviolet blue over some specimens, ash grey paper textures, pale ochre aged patina, deep forest black ink lines, phosphorescent white interference artifacts. Documentary historical mood becoming elegiac. Square format, dense layered composition.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 10,
+      "title_lt": "Nakties instrumentas",
+      "year": "2026",
+      "medium_lt": "Konceptuali skulptūros dokumentacija",
+      "statement_lt": "Fotografija fiksuoja neegzistuojančią skulptūrą – naktinio drugelio formos garso instrumentą, skirtą groti dažniais, kuriuos girdi tik šikšnosparniai. Konceptualus objektas egzistuoja tik šioje dokumentacijoje, pabrėždamas ribą tarp realaus ir įsivaizduojamo. Drugelio sparnai transformuoti į akustines membranas, o kūnas – į rezonatorių. Ultravioletinis apšvietimas sukuria laboratorinę, bet kartu ritualinę atmosferą.",
+      "image_prompt": "Conceptual sculpture documentation photograph of moth-shaped acoustic instrument designed for ultrasonic frequencies, wings transformed into resonating membranes, body as sound chamber. Object rendered with scientific precision as if real specimen. Studio photography aesthetic with ultraviolet blue lighting creating laboratory ritual atmosphere. Ash grey metallic surfaces, pale ochre membrane sections, deep forest black mounting base, phosphorescent white frequency markers. Glitch artifacts suggesting the object exists between real and imagined. Clinical documentation mood. Square format, object centered.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 11,
+      "title_lt": "Feromonų žemėlapis",
+      "year": "2026",
+      "medium_lt": "Duomenų vizualizacija",
+      "statement_lt": "Abstraktus kūrinys vizualizuoja nematomas feromonų trajektorijas nakties ore. Moksliniai duomenys apie naktinių drugelių cheminę komunikaciją paverčiami estetine patirtimi – linijos ir taškai žymi skrydžio kelius, kur patinai seka patelių paliktus kvapų pėdsakus. Fosforescentiniai balti siūlai raizgo tamsią erdvę, sukurdami tinklą, kuriame kiekvienas mazgas yra susitikimo taškas.",
+      "image_prompt": "Data visualization artwork mapping invisible pheromone trajectories in night air, scientific moth communication data transformed into abstract linear network. Flight paths as phosphorescent white threads weaving through deep forest black space. Intersection nodes glowing in ultraviolet blue marking encounter points. Ash grey gradient suggesting air density, pale ochre heat signatures where moths pause. Subtle glitch interference patterns suggesting data transmission. Scientific documentation aesthetic becoming abstract expressionism. Hypnotic nocturnal mood. Square format, network spreading from center.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 12,
+      "title_lt": "Laikrodis be rodyklių",
+      "year": "2026",
+      "medium_lt": "Mišri technika",
+      "statement_lt": "Kūrinys tiria naktinių drugelių cirkadinį ritmą – vidinį laikrodį, kuris jiems nurodo, kada pabusti ir pradėti skrydį. Drugelio siluetas įkomponuotas į abstrakčią laiko skalę, kur valandos pakeistos mėnulio fazėmis ir tamsos gradacijomis. Tai laikrodis, skirtas tiems, kurie gyvena priešingai nei mes – tiems, kuriems diena yra miegas, o naktis – budėjimas ir kalba.",
+      "image_prompt": "Mixed media artwork exploring moth circadian rhythm, moth silhouette integrated into abstract time scale replacing hours with moon phases and darkness gradients. Circular composition suggesting clock face without hands. Ultraviolet blue moon phase indicators, ash grey twilight zones, pale ochre dusk and dawn transitions, deep forest black midnight center, phosphorescent white moth silhouette. Scientific chronobiology diagram merged with meditative mandala aesthetic. Glitch artifacts at temporal transitions. Nocturnal contemplative mood. Square format, circular design centered.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 13,
+      "title_lt": "Kaukolės balsas",
+      "year": "2026",
+      "medium_lt": "Skaitmeninė tapyba",
+      "statement_lt": "Acherontia atropos – Mirties galvos drugelis – vienintelis naktinis drugelis, galintis skleisti girdimą garsą. Kūrinyje šis mitologizuotas vabzdys vaizduojamas su entomologiniu tikslumu, tačiau jo kaukolės raštas ant krūtinės tampa garso bangų vizualizacija. Cypimas, kurį jis skleidžia, čia materializuojasi kaip koncentriniai ratilai, sklindantys į tamsą. Drugelis kalba, bet mes negirdime.",
+      "image_prompt": "Digital painting of Death's Head Hawk Moth with entomological precision, skull pattern on thorax transforming into sound wave visualization. Concentric sonic rings emanating from thorax into surrounding darkness. Color palette: ash grey wing camouflage patterns, pale ochre skull marking, ultraviolet blue sound wave rings, deep forest black background, phosphorescent white highlights on body fur. Mythological specimen documentation mood, clinical yet ominous. Subtle glitch distortions on sound waves. Square format, moth viewed from above, filling frame.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 14,
+      "title_lt": "Sparnų biblioteka",
+      "year": "2026",
+      "medium_lt": "Tipografinis kolažas",
+      "statement_lt": "Dešimtys drugelių sparnų fragmentų išdėstyti kaip spausdinimo raidės, sudarydami neįskaitomą, bet vizualiai įtikinamą tekstą. Kūrinys reaguoja į temą tiesiogiai: jei drugeliai yra abėcėlė, tai jų sparnai yra raidės. Kolažas naudoja archyvinius entomologinius atvaizdus, supjaustytus ir perkonfigūruotus pagal Gutenbergo tradicijos principus. Rezultatas – puslapis iš knygos, parašytos gamtos.",
+      "image_prompt": "Typographic collage artwork arranging dozens of moth wing fragments as printing typeface letters forming unreadable but visually convincing text blocks. Archival entomological imagery cut and reconfigured following Gutenberg tradition principles. Page layout from nature-written book aesthetic. Color palette unified: ultraviolet blue tinting, ash grey paper background, pale ochre wing fragments, deep forest black text-like arrangements, phosphorescent white margin markers. Scientific archive meeting typography experiment. Glitch scan lines throughout. Square format, text block centered.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 15,
+      "title_lt": "Ultravioletinė tiesa",
+      "year": "2026",
+      "medium_lt": "UV fotografija",
+      "statement_lt": "Specialia ultravioletine fotografija užfiksuotas drugelio sparnas atskleidžia raštus, nematomus žmogaus akiai įprastoje šviesoje. Tai vizualinis įrodymas, kad egzistuoja grožis, skirtas ne mums – ženklai, kuriuos supranta tik kitos nakties būtybės. Kūrinys demonstruoja mokslinę dokumentaciją kaip meninę praktiką ir klausia: kiek dar pasaulio mes nematome?",
+      "image_prompt": "UV photography of moth wing revealing patterns invisible to human eye in normal light, scientific documentation showing hidden ultraviolet markings. Wing surface displays secret geometric patterns only visible to other nocturnal creatures. Dominant ultraviolet blue revealing hidden designs, ash grey base wing color, pale ochre UV-reactive spots, deep forest black background, phosphorescent white fluorescent patches. Technical scientific photography becoming revelation of hidden beauty. Clinical laboratory aesthetic. Subtle glitch artifacts. Square format, wing filling three-quarters of frame.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 16,
+      "title_lt": "Paskutinis skrydis",
+      "year": "2026",
+      "medium_lt": "Eleginis piešinys",
+      "statement_lt": "Naktinis drugelis gyvena tik kelias savaites suaugęs – pakankamai ilgai, kad susiporuotų ir padėtų kiaušinėlius. Kūrinys fiksuoja paskutinio skrydžio momentą: apšiurę sparnai, nusitrynę žvyneliai, bet vis dar tobula trauka link šviesos. Eleginis tonas perteikia trumpo gyvenimo grožį, o glitch tekstūros simbolizuoja besiartinančią pabaigą. Dokumentacija tampa atsisveikinimo aktu.",
+      "image_prompt": "Elegiac drawing depicting moth in final flight, worn wings with missing scales, tattered edges but maintaining perfect trajectory toward light source. Anatomically accurate deterioration rendered with scientific precision. Ash grey worn wing patches, pale ochre remaining scale clusters, ultraviolet blue light destination above, deep forest black surrounding void, phosphorescent white light trail behind moth. Melancholic documentation of brief life beauty. Glitch distortions increasing toward wing edges suggesting approaching end. Nocturnal contemplative mood. Square format, moth ascending diagonally.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 17,
+      "title_lt": "Prisilietimo kalba",
+      "year": "2026",
+      "medium_lt": "Taktilinis reljefo atvaizdavimas",
+      "statement_lt": "Šiame kūrinyje drugelio sparno paviršius transformuotas į reljefinį žemėlapį, primenantį Brailio rašto logiką. Tai vizualizacija hipotetinio lietimo būdo, kuriuo galėtume skaityti drugelius kaip knygas. Tamsios ir šviesios zonos žymi skirtingus reljefus, o glitch iškraipymai simbolizuoja vertimo netikslumus. Kūrinys kviečia įsivaizduoti pojūtį, kurio neturime.",
+      "image_prompt": "Tactile relief visualization of moth wing surface transformed into Braille-like reading map, raised texture patterns suggesting touch-based reading of moths as books. Dark and light zones indicating different relief heights. Ash grey elevated ridges, pale ochre valleys, ultraviolet blue edge lighting creating depth, deep forest black shadows in recesses, phosphorescent white highest points. Scientific haptic mapping aesthetic. Subtle glitch distortions as translation errors. Clinical yet speculative mood. Square format, relief pattern filling frame, side lighting emphasizing texture.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 18,
+      "title_lt": "Migruojantis žodis",
+      "year": "2026",
+      "medium_lt": "Kartografinis menas",
+      "statement_lt": "Kai kurios naktinių drugelių rūšys migruoja tūkstančius kilometrų – kelionės, kurias iššifruojame tik dabar. Kūrinys kartografuoja Bogong drugelių maršrutą Australijoje, paversdamas mokslinius duomenis abstrakčiu piešiniu. Migracijos trajektorijos primena rašyseną, tarsi žemė būtų pergamentas, o drugeliai – plunksnakočiai, rašantys metų laikus. Ultravioletiniai atspalviai žymi naktinio skrydžio zonas.",
+      "image_prompt": "Cartographic artwork mapping Bogong moth migration route across Australia, scientific data transformed into abstract calligraphic drawing. Migration trajectories resembling handwriting as if earth is parchment and moths are writing seasons. Continental outline in ash grey, ultraviolet blue marking nocturnal flight zones, pale ochre daytime rest areas, deep forest black ocean, phosphorescent white moth position markers along route. Glitch distortions where data is uncertain. Scientific cartography becoming lyrical notation. Square format, continental view with trajectory lines.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 19,
+      "title_lt": "Imitatorius",
+      "year": "2026",
+      "medium_lt": "Lyginamoji studija",
+      "statement_lt": "Kai kurie naktiniai drugeliai imituoja lapus, žievę ar net paukščių išmatas. Šis kūrinys greta sudeda imitatorių ir jo modelį, demonstruodamas evoliucijos sukurtą gramatinę sistemą. Drugelis, kurio sparnai tobulai atkartoja nudžiūvusį lapą, čia tampa vertėju tarp rūšių. Glitch tekstūros pabrėžia ribą tarp originalo ir kopijos, tarp kalbančiojo ir klausančiojo.",
+      "image_prompt": "Comparative study artwork placing moth mimicry specimen alongside its model, evolution's grammatical system demonstrated. Dead leaf moth wing next to actual dried leaf, spot-the-difference scientific presentation. Entomologically precise rendering of both subjects. Ash grey leaf veins and wing venation matching, pale ochre decay colors, ultraviolet blue highlighting differences, deep forest black mounting background, phosphorescent white specimen labels. Glitch textures at boundary between original and copy. Clinical taxonomic comparison mood. Square format, two subjects side by side.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 20,
+      "title_lt": "Naktinė procesija",
+      "year": "2026",
+      "medium_lt": "Panoraminė kompozicija",
+      "statement_lt": "Dvidešimt keturių naktinių drugelių rūšių eilė juda per drobę kaip procesija – kiekvienas skirtingas, bet visi suvienyti nakties. Kompozicija primena viduramžių procesijų paveikslus, tačiau dalyviai yra entomologiniai mokslo objektai. Eilės formatas sukuria ritmo pojūtį, lyg drugeliai būtų skiemenys ilgame sakinyje, kurio prasmė atsiskleidžia tik visumoje.",
+      "image_prompt": "Panoramic composition of twenty-four different moth species arranged in ceremonial procession across canvas, medieval procession painting format with entomological specimens. Each moth scientifically accurate but unified by nocturnal journey. Ash grey wing variations, pale ochre body diversity, ultraviolet blue atmospheric glow, deep forest black background gradient, phosphorescent white trailing light from each moth. Rhythm created through spacing like syllables in long sentence. Glitch artifacts connecting specimens. Ritual documentary mood. Square format, horizontal procession line through center.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 21,
+      "title_lt": "Ausys tamsoje",
+      "year": "2026",
+      "medium_lt": "Anatominis tyrimas",
+      "statement_lt": "Daugelis naktinių drugelių turi ausų membranas ant krūtinės arba pilvo – evoliucijos atsaką į šikšnosparnių ekolokaciją. Kūrinys fokusuojasi į šią mažai žinomą anatomiją, pateikdamas timpanines struktūras kaip pagrindines figūras. Tai portretas ausų, kurios girdi mūsų priešų balsus – ultragarsiniai signalai čia vizualizuojami kaip koncentrinės bangos aplink klausos organus.",
+      "image_prompt": "Anatomical study focusing on moth tympanal hearing organs on thorax and abdomen, scientific dissection-style illustration with these little-known structures as main subject. Ultrasonic bat signals visualized as concentric waves around ear membranes. Entomologically precise rendering of tympanal structures. Ash grey body sections, pale ochre membrane surfaces, ultraviolet blue incoming echolocation waves, deep forest black background, phosphorescent white nerve connections. Clinical anatomical documentation mood with defensive system beauty. Glitch interference on sound waves. Square format, close-up ear anatomy.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 22,
+      "title_lt": "Lėtoji tyla",
+      "year": "2026",
+      "medium_lt": "Laiko trukmės studija",
+      "statement_lt": "Ilgos ekspozicijos fotografija fiksuoja naktinio drugelio skrydį aplink lempą per kelias minutes. Laiko suspaudimas sukuria šviesos piešinį – trajektoriją, kuri paprastai nematoma. Drugelis tampa procesu, o ne objektu, jo skrydis – veiksmu, užrašytu šviesoje. Glitch tekstūros prideda skaitmeninį sluoksnį prie analoginės fotografijos technikos, sukurdamos hibridinę dokumentaciją.",
+      "image_prompt": "Long exposure photograph capturing moth flight around lamp over several minutes, time compression creating light painting trajectory pattern. Moth becomes process rather than object, flight path written in light. Central lamp as phosphorescent white orb, ultraviolet blue spiral flight trails, ash grey moth blur at various points, pale ochre warmth near lamp, deep forest black surrounding space. Analog photography technique with digital glitch overlay creating hybrid documentation. Hypnotic nocturnal meditation mood. Square format, lamp centered with spiral trails.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 23,
+      "title_lt": "Vikšro sapnas",
+      "year": "2026",
+      "medium_lt": "Siurrealistinė dokumentacija",
+      "statement_lt": "Kūrinys įsivaizduoja, ką sapnuoja vikšras kokoninėje stadijoje – tą paslaptingą laikotarpį, kai senoji forma ištirpsta ir formuojasi nauja. Mokslinė chrysalis anatomija susipina su sapno vaizdais: sparnai, kurie dar neegzistuoja, jau spindi iš vidaus. Tai dokumentacija proceso, kurio negalime stebėti – vidinio pasaulio, užrakinto šilkiniuose siūluose. Fosforescentiniai elementai žymi kūrimosi zonas.",
+      "image_prompt": "Surrealistic documentation imagining what caterpillar dreams inside chrysalis, mysterious period when old form dissolves and new forms. Scientific chrysalis anatomy intertwined with dream imagery of wings that do not yet exist glowing from within. Ash grey silk cocoon exterior, pale ochre larval remnants, ultraviolet blue forming wing patterns visible through translucent shell, deep forest black background, phosphorescent white creation zones and nerve formations. Documentary precision meeting dream logic. Glitch transitions between forms. Square format, cocoon large and centered.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    },
+    {
+      "id": 24,
+      "title_lt": "Paskutinė raidė: aušra",
+      "year": "2026",
+      "medium_lt": "Epiloginė kompozicija",
+      "statement_lt": "Abėcėlė baigiasi ten, kur baigiasi naktis. Paskutinis kūrinys vaizduoja naktinį drugelį, besitraukiantį į šešėlį artėjant aušrai – tą momentą, kai nakties kalba nutyla iki kitos nakties. Horizontas pereina iš ultravioletinės į ochros tonus, žymėdamas perėjimą. Drugelis čia yra ne pralaimėtojas, o tiesiog kitos pamokos dalyvis. Glitch tekstūros blėsta kartu su tamsa, užleisdamos vietą tylai.",
+      "image_prompt": "Epilogue composition showing moth retreating into shadow as dawn approaches, moment when night language falls silent until next night. Horizon transitioning from ultraviolet blue night to pale ochre dawn glow. Deep forest black shadows welcoming moth's return, phosphorescent white fading stars, ash grey moth silhouette in liminal position. Glitch textures fading with darkness yielding to silence. Scientific specimen returning to mystery. Nocturnal farewell mood, contemplative and cyclical. Clinical documentation becoming poetic closure. Square format, horizontal dawn line in upper third, moth in lower shadow.",
+      "artist": "",
+      "image_filename": "",
+      "target_filename": ""
+    }
+  ],
+  "poster_prompt": "Square format gallery poster image. Extreme macro view of a nocturnal moth rendered with scientific entomological precision, featuring intricate wing scales and feathered antennae in ash grey and pale ochre tones. The moth emerges from abstract fields of bioluminescent patterns, UV-reactive ultraviolet blue color bleeds dissolving into deep forest black negative space. Subtle digital glitch textures distort edges, creating tension between clinical documentation and hypnotic hallucination. Phosphorescent white highlights trace wing venation like forgotten alphabetic symbols. Atmosphere is nocturnal, mysterious, museum-quality scientific illustration meeting dreamlike abstraction. No text, no typography, no logos. Professional exhibition aesthetic, dramatic lighting suggesting both microscope observation and midnight encounter.",
+  "social_caption_lt": "Ar girdite nakties šnabždesius? Naktiniai drugeliai kadaise buvo vasaros nakties abėcėlė, kurią mokėjome skaityti. Kviečiame į parodą, kur mokslinė precizika susitinka su sapnų logika. Išmokime vėl suprasti šią pamirštą kalbą."
+}
